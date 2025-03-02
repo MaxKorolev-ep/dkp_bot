@@ -1,0 +1,9 @@
+discord.py
+os
+logging
+re
+json
+asyncio
+time
+datetime
+aiofiles

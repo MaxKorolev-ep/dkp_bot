@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  bot:
+    restart: always
+    build: .
+    env_file:
+      - $ENV
+    volumes:
+      - .:/app
+    command: >
+      bash -c "cd /app && python bot.py"
