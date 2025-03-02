@@ -11,7 +11,7 @@ import datetime
 import aiofiles
 
 
-load_dotenv(dotenv_path="G:/dkp-master/.env")
+load_dotenv()
 GUILD_ID = os.getenv("GUILD_ID")  # Загружаем как строку
 if GUILD_ID is None:
     raise ValueError("GUILD_ID is missing. Check your .env file!")
