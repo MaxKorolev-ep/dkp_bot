@@ -1,2 +1,10 @@
 discord.py
 python-dotenv
+os
+logging
+re
+json
+asyncio
+time
+datetime
+aiofiles
