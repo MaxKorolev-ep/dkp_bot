@@ -1,9 +1,6 @@
 name: Auto Commit and Push
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "*/5 * * * *"  # Запуск раз в 5 минут
 
@@ -12,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # Используем токен из GitHub Secrets
+      RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}  # API ключ для Railway
+
     steps:
       - name: Checkout репозитория
         uses: actions/checkout@v3
@@ -23,20 +22,20 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Перезаписать dkp_log.json
+      - name: Скачивание файла с Railway (через scp или API)
         run: |
-          echo '{"timestamp": "$(date)", "log": "New log entry"}' > dkp_log.json
-          cat dkp_log.json  # Вывод содержимого файла для проверки
+          # Пример скачивания файла с Railway через SCP (используйте ваш метод)
+          scp -i $RAILWAY_SSH_KEY user@your-railway-app:/path/to/dkp_log.json ./dkp_log.json
+          
+          # Или если используете API Railway, то это будет HTTP запрос
+          curl -H "Authorization: Bearer $RAILWAY_API_KEY" https://railway.app/your-api-endpoint > dkp_log.json
 
-      - name: Сделать git pull перед push
+      - name: Проверка наличия изменений в dkp_log.json
         run: |
-          git pull origin main --rebase
-
-      - name: Проверка remote URL
-        run: git remote -v
+          git diff dkp_log.json || echo "Файл не изменился"
 
       - name: Коммит и пуш изменений
         run: |
           git add dkp_log.json
-          git commit -m "Перезаписан dkp_log.json" || echo "No changes to commit"
+          git commit -m "Перезаписан файл dkp_log.json из Railway" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/MaxKorolev-ep/dkp_bot.git main
