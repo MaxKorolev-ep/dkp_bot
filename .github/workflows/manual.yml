@@ -3,9 +3,9 @@ name: Auto Commit and Push
 on:
   push:
     branches:
-      - main  # Запуск при изменении в основной ветке
+      - main
   schedule:
-    - cron: "*/10 * * * *"  # Запуск каждый час (измените, если нужно)
+    - cron: "0 * * * *"  # Каждые 60 минут
 
 jobs:
   commit:
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout репозитория
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Настройка Git
         run: |
@@ -23,6 +25,4 @@ jobs:
         run: |
           git add .
           git commit -m "Автообновление файлов" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/MaxKorolev-ep/dkp_bot.git main
