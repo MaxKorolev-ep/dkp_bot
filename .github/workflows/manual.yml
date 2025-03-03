@@ -25,9 +25,12 @@ jobs:
 
       - name: Перезаписать dkp_log.json
         run: |
-          # Генерация новых данных для файла dkp_log.json
           echo '{"timestamp": "$(date)", "log": "New log entry"}' > dkp_log.json
           cat dkp_log.json  # Вывод содержимого файла для проверки
+
+      - name: Сделать git pull перед push
+        run: |
+          git pull origin main --rebase
 
       - name: Проверка remote URL
         run: git remote -v
