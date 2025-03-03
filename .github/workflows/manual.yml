@@ -11,7 +11,7 @@ jobs:
   commit:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # 👈 Вставьте токен сюда!
+      GITHUB_TOKEN: ${{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}}  # 👈 Вставьте токен сюда!
     steps:
       - name: Checkout репозитория
         uses: actions/checkout@v3
