@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 * * * *"  # Запуск раз в час
+    - cron: "*/5 * * * *"  # Запуск раз в час
 
 jobs:
   commit:
