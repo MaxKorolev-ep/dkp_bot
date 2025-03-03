@@ -5,13 +5,13 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/5 * * * *"  # Запуск раз в час
+    - cron: "*/5 * * * *"  # Запуск раз в 5 минут
 
 jobs:
   commit:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{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}}  # 👈 Вставьте токен сюда!
+      GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # Используем токен из GitHub Secrets
     steps:
       - name: Checkout репозитория
         uses: actions/checkout@v3
