@@ -847,19 +847,17 @@ async def alog_error(ctx, error):
 @bot.command()
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
 # Функция для загрузки файлов на GitHub
-async def upload_files_to_github(ctx, github_token: str, repo_name: str, *files):
-    """Загружает файлы в папку на GitHub."""
-    
+def upload_files_to_github(github_token, repo_name, files, folder="reserv"):
     # Авторизация через токен
     g = Github(github_token)
     repo = g.get_repo(repo_name)
 
     # Проверяем существование папки в репозитории
     try:
-        contents = repo.get_contents("reserv")
+        contents = repo.get_contents(folder)
     except:
         # Если папки нет, создаем её
-        contents = repo.create_file("reserv/.empty", "Initial commit to create the folder", "")
+        contents = repo.create_file(f"{folder}/.empty", "Initial commit to create the folder", "")
 
     # Загрузка файлов в репозиторий
     for file_path in files:
@@ -869,15 +867,13 @@ async def upload_files_to_github(ctx, github_token: str, repo_name: str, *files)
         
         # Проверяем, существует ли файл, и обновляем его, если нужно
         try:
-            file_in_repo = repo.get_contents(f"reserv/{file_name}")
+            file_in_repo = repo.get_contents(f"{folder}/{file_name}")
             repo.update_file(file_in_repo.path, f"Update {file_name}", content, file_in_repo.sha)
-            await ctx.send(f"Updated {file_name} in repository.")
+            print(f"Updated {file_name} in repository.")
         except:
             # Если файл не существует, создаем новый
-            repo.create_file(f"reserv/{file_name}", f"Upload {file_name}", content)
-            await ctx.send(f"Uploaded {file_name} to repository.")
-
-
+            repo.create_file(f"{folder}/{file_name}", f"Upload {file_name}", content)
+            print(f"Uploaded {file_name} to repository.")
 
 
 # Загружаем данные при старте
