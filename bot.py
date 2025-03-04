@@ -9,7 +9,7 @@ import asyncio
 import time
 import datetime
 import aiofiles
-
+from github import Github
 
 load_dotenv()
 GUILD_ID = os.getenv("GUILD_ID")  # Загружаем как строку
@@ -33,6 +33,8 @@ DKP_FILE = "dkp_data.json"
 dkp_lock = asyncio.Lock()
 auctions = {}
 AUC_LOG_FILE = "auc_log.json"
+# Словарь для хранения ID сообщений об аукционах
+auction_messages = {}
 
 
 async def load_dkp_data():
@@ -329,23 +331,29 @@ async def sauc(ctx, auction_name: str, item: str, description: str, duration: in
 
     # Логируем создание аукциона
     await log_auction_creation(auction_id, auction_name, item, description, end_time)
-
-    # Отправляем сообщение в чат
-    await ctx.send(f"# Auction name: **__{auction_name}__** (ID: {auction_id})\n")
-    await ctx.send(f"## The auction for **{item}** has started!\n")
-    await ctx.send(f"### Trait: **{description}**\n")
-    await ctx.send(f"Bids are accepted for **{format_seconds(duration)}**. To place a bid, use the command: **__!bid {auction_id} amount__**.")
-
+    
+    # Получаем канал по имени (замените на свой канал)
+    channel = discord.utils.get(ctx.guild.text_channels, name="test3")
+    
+    # Проверяем, найден ли канал
+    if channel:
+        # Отправляем сообщение в канал #auctions1
+        auction_message = await channel.send(f"# Auction name: {auction_name} (__ID: {auction_id}__)\n## @everyone, the auction for **{item}** has started!\n### Trait: **{description}**\nBids are accepted for **{format_seconds(duration)}**. To place a bid, use the command: **!bid {auction_id} amount**.")
+        auction_messages[auction_id] = auction_message.id
+    else:
+        await ctx.send("Error: Channel '#auctions1' not found.")
     # Запускаем таймер завершения аукциона
     await asyncio.sleep(duration)
     await endauction(ctx, auction_id)
 
+# Функция для окончания аукциона с уникальным именем
 async def endauction(ctx, auction_id: int):
     """Ends the auction, announces the winner, the runner-up, and deducts DKP."""
     global auctions
 
     # Проверяем, существует ли аукцион с таким ID
     auction = next((auc for auc in auctions.values() if auc["id"] == auction_id), None)
+    channel = discord.utils.get(ctx.guild.text_channels, name="test4")
 
     if not auction:
         await ctx.send(f"No auction found with ID {auction_id}.")
@@ -364,7 +372,7 @@ async def endauction(ctx, auction_id: int):
                 new_dkp = max(0, user_dkp - auction["highest_bid"])
                 dkp_data[str(winner_id)]["dkp"] = new_dkp
             else:
-                await ctx.send(f"Error: Invalid DKP value for {winner_id}.")
+                await channel.send(f"Error: Invalid DKP value for {winner_id}.")
                 return
 
             await save_dkp_data(dkp_data)
@@ -384,28 +392,36 @@ async def endauction(ctx, auction_id: int):
 
             # Логируем результаты
             await log_auction_result(auction_id, top_3_bids)
-
+            
+             # Получаем канал по имени (замените на свой канал)
+    
             # Формируем финальное сообщение
             result_message = f"# The auction with ID **{auction_id}** for item **{auction['item']}** has ended!\n"
             result_message += f"## Winner: **{winner.mention}** with a bid of {auction['highest_bid']} DKP.\n"
 
             if len(top_3_bids) > 1:
-                runner_up = top_3_bids[1]["user"].mention
+                runner_up = guild.get_member(top_3_bids[1]["user"].id)
                 runner_up_bid = top_3_bids[1]["amount"]
                 result_message += f"### Second bid: **{runner_up}** with a bid of {runner_up_bid} DKP.\n"
 
             if len(top_3_bids) > 2:
-                third_place = top_3_bids[2]["user"].mention
+                third_place = guild.get_member(top_3_bids[1]["user"].id)
                 third_place_bid = top_3_bids[2]["amount"]
-                result_message += f"#### Third bid: **{third_place}** with a bid of {third_place_bid} DKP.\n"
-
-            await ctx.send(result_message)
+                result_message += f"### Third bid: **{third_place}** with a bid of {third_place_bid} DKP.\n"
+            
+            await channel.send(result_message)
 
         else:
-            await ctx.send(f"Error: No DKP data for winner with ID {winner_id}.")
+            await channel.send(f"Error: No DKP data for winner with ID {winner_id}.")
     else:
-        await ctx.send(f"# The auction with ID **{auction_id}** (item: {auction['item']}) has ended, but no bids were placed.")
+        await channel.send(f"# @everyone, the auction with ID **{auction_id}** (item: {auction['item']}) has ended, but no bids were placed.")
 
+    # Удаляем сообщение о старте аукциона
+    channel = discord.utils.get(ctx.guild.text_channels, name="test3")
+    auction_message_id = auction_messages.get(auction_id)
+    if auction_message_id:
+        auction_message = await channel.fetch_message(auction_message_id)
+        await auction_message.delete()
     # Удаляем аукцион из списка
     del auctions[auction_id]
 
@@ -462,21 +478,21 @@ async def fendauc(ctx, auction_name: str):
             result_message += f"## Winner: **{winner.mention}** with a bid of {auction['highest_bid']} DKP.\n"
 
             if len(top_3_bids) > 1:
-                runner_up = top_3_bids[1]["user"].mention
+                runner_up = guild.get_member(top_3_bids[1]["user"].id)
                 runner_up_bid = top_3_bids[1]["amount"]
                 result_message += f"### Second bid: **{runner_up}** with a bid of {runner_up_bid} DKP.\n"
 
             if len(top_3_bids) > 2:
-                third_place = top_3_bids[2]["user"].mention
+                third_place = guild.get_member(top_3_bids[1]["user"].id)
                 third_place_bid = top_3_bids[2]["amount"]
-                result_message += f"#### Third bid: **{third_place}** with a bid of {third_place_bid} DKP.\n"
+                result_message += f"### Third bid: **{third_place}** with a bid of {third_place_bid} DKP.\n"
 
             await ctx.send(result_message)
 
         else:
             await ctx.send(f"Error: No DKP data for winner with ID {winner_id}.")
     else:
-        await ctx.send(f"# The auction with ID **{auction_id}** (item: {auction['item']}) has ended, but no bids were placed.")
+        await ctx.send(f"# @everyone, the auction with ID **{auction_id}** (item: {auction['item']}) has ended, but no bids were placed.")
 
     # Удаляем аукцион из списка
     del auctions[auction_id]
@@ -495,7 +511,7 @@ async def aucs(ctx):
     active_auctions_message = "Active Auctions:\n"
     for auction_name, auction in auctions.items():
         remaining_time = auction["end_time"] - time.time()
-        active_auctions_message += f"**{auction_name}**: {auction['item']} (Time left: {format_seconds(remaining_time)})\n"
+        active_auctions_message += f"**Auction ID: {auction_name}** - {auction['item']} (Time left: {format_seconds(remaining_time)})\n"
 
     await ctx.send(active_auctions_message)
 
@@ -538,53 +554,86 @@ async def log_dkp_change(user, amount, action, description=""):
     except Exception as e:
         print(f"[ERROR] Ошибка при записи в dkp_log.json: {e}")
 
-async def add_dkp(user, amount):
+async def add_dkp(users, amount):
+    """Добавляет DKP сразу нескольким пользователям."""
     dkp_data = await load_dkp_data()
-    user_id = str(user.id)
+    updated_users = []
 
-    if user_id not in dkp_data:
-        dkp_data[user_id] = {
-            "display_name": user.display_name,
-            "dkp": 0
-        }
+    for user in users:
+        user_id = str(user.id)
 
-    dkp_data[user_id]["dkp"] += amount
+        if user_id not in dkp_data:
+            dkp_data[user_id] = {
+                "display_name": user.display_name,
+                "dkp": 0
+            }
+
+        dkp_data[user_id]["dkp"] += amount
+        updated_users.append(user.display_name)
+
     await save_dkp_data(dkp_data)
 
-    print(f"[DKP] Added {amount} DKP to user {user.display_name}")  # Лог в консоль
+    print(f"[DKP] Added {amount} DKP to users: {', '.join(updated_users)}")  # Лог в консоль
 
-async def sub_dkp(user, amount):
+async def sub_dkp(users, amount):
+    """Удаляет DKP сразу у нескольких пользователей."""
     dkp_data = await load_dkp_data()
-    user_id = str(user.id)
+    updated_users = []
 
-    if user_id not in dkp_data:
-        dkp_data[user_id] = {
-            "display_name": user.display_name,
-            "dkp": 0
-        }
+    for user in users:
+        user_id = str(user.id)
 
-    dkp_data[user_id]["dkp"] = max(0, dkp_data[user_id]["dkp"] - amount)
+        if user_id not in dkp_data:
+            dkp_data[user_id] = {
+                "display_name": user.display_name,
+                "dkp": 0
+            }
+
+        dkp_data[user_id]["dkp"] = max(0, dkp_data[user_id]["dkp"] - amount)
+        updated_users.append(user.display_name)
+
     await save_dkp_data(dkp_data)
 
-    print(f"[DKP] Removed {amount} DKP from user {user.display_name}")  # Лог в консоль
+    print(f"[DKP] Removed {amount} DKP from users: {', '.join(updated_users)}")  # Лог в консоль
 
 # Command to add DKP points
 @bot.command()
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
-async def adddkp(ctx, user: discord.Member, amount: int, description: str):
+async def adddkp(ctx, amount: int, description: str, *users: discord.Member):
     """Adds DKP points to a user."""
-    await add_dkp(user, amount)  # Asynchronous call
-    await ctx.send(f"{user.mention} has received {amount} DKP!\n {description}.")
-    await log_dkp_change(user, amount, "added", description)
+    await add_dkp(users, amount)  # Asynchronous call
+     # Формируем список получателей
+    user_names = ", ".join(user.display_name for user in users)
+    await ctx.send(f"{user_names} has received {amount} DKP!\nReason: {description}.")
+    for user in users:
+        await log_dkp_change(user, amount, "added", description)
 
 # Command to subtract DKP points
 @bot.command()
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
-async def subdkp(ctx, user: discord.Member, amount: int, description: str):
+async def subdkp(ctx, amount: int, description: str, *users: discord.Member):
     """Removes DKP points from a user."""
-    await sub_dkp(user, amount)  # Asynchronous call
-    await ctx.send(f"{user.mention} has lost {amount} DKP!\n {description}.")
-    await log_dkp_change(user, amount, "removed", description)
+    await sub_dkp(users, amount)  # Asynchronous call
+    user_names = ", ".join(user.display_name for user in users)
+    await ctx.send(f"{user_names} has lost {amount} DKP!\nReason: {description}.")
+    for user in users:
+        await log_dkp_change(user, amount, "removed", description)
+
+@bot.command()
+@commands.cooldown(1, 30, commands.BucketType.user)
+async def mydkp(ctx):
+    """Shows the DKP points of the user who called the command."""
+    dkp_data = await load_dkp_data()
+    user_id = str(ctx.author.id)  # ID пользователя, который вызвал команду
+    user_data = dkp_data.get(user_id, {"dkp": 0})
+    dkp_points = user_data["dkp"]
+    await ctx.send(f"{ctx.author.display_name} has {dkp_points} DKP.")
+
+# Обработчик ошибки, если команда используется слишком часто
+@mydkp.error
+async def mydkp_error(ctx, error):
+    if isinstance(error, commands.CommandOnCooldown):
+        await ctx.send(f"{ctx.author.mention}, wait {error.retry_after:.1f} s before next command reuse!")
 
 @bot.command()
 @commands.cooldown(1, 30, commands.BucketType.user)
@@ -604,7 +653,7 @@ async def dkp_error(ctx, error):
 
 @bot.command()
 @commands.cooldown(1, 30, commands.BucketType.guild)
-async def tdkp(ctx):
+async def topdkp(ctx):
     """Displays the top users with the highest DKP points."""
     dkp_data = await load_dkp_data()
 
@@ -620,22 +669,22 @@ async def tdkp(ctx):
     for idx, (user_id, user_data) in enumerate(top_users[:10], 1):
         try:
             user = await bot.fetch_user(int(user_id))  # Fetch user object
-            top_message += f"{idx}. {user.display_name} — {user_data['dkp']} DKP\n"
+            top_message += f"{idx}. {ctx.guild.get_member(user.id).display_name} — {user_data['dkp']} DKP\n"
         except:
             top_message += f"{idx}. Unknown user (ID {user_id}) — {user_data['dkp']} DKP\n"
 
     await ctx.send(top_message)
 # Обработчик ошибки, если команда используется слишком часто
-@tdkp.error
-async def tdkp_error(ctx, error):
+@topdkp.error
+async def topdkp_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
         await ctx.send(f"{ctx.author.mention}, wait {error.retry_after:.1f} s before next command reuse!")
 @bot.command()
 @commands.cooldown(1, 30, commands.BucketType.guild) 
-async def adkp(ctx):
+async def alldkp(ctx):
     """Displays a list of all users and their DKP points."""
     dkp_data = await load_dkp_data()
-
+    
     if not dkp_data:
         await ctx.send("No users with DKP found.")
         return
@@ -648,14 +697,14 @@ async def adkp(ctx):
     for user_id, user_data in all_users:
         try:
             user = await bot.fetch_user(int(user_id))
-            all_dkp_message += f"{user.display_name}: {user_data['dkp']} DKP\n"
+            all_dkp_message += f"{ctx.guild.get_member(user.id).display_name}: {user_data['dkp']} DKP\n"
         except:
             all_dkp_message += f"Unknown user (ID {user_id}): {user_data['dkp']} DKP\n"
 
     await ctx.send(all_dkp_message)
 # Обработчик ошибки, если команда используется слишком часто
-@adkp.error
-async def adkp_error(ctx, error):
+@alldkp.error
+async def alldkp_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
         await ctx.send(f"{ctx.author.mention}, wait {error.retry_after:.1f} s before next command reuse!")
 @bot.command()
@@ -673,7 +722,6 @@ async def duser(ctx, user: discord.Member):
     await save_dkp_data(dkp_data)
 
     await ctx.send(f"{user.mention} has been removed from the DKP database.")
-
 
 bot.remove_command("help")
 @bot.command()
@@ -699,8 +747,8 @@ async def ahelp(ctx):
 
     await ctx.send(embed=embed)
 
-
 @bot.command()
+@commands.cooldown(1, 30, commands.BucketType.user)
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
 async def log(ctx, user: discord.Member):
     """Shows the DKP log history for a user."""
@@ -732,7 +780,7 @@ async def log(ctx, user: discord.Member):
         # Ограничиваем количество записей (например, до 10)
         log_text = "\n".join(formatted_logs[-10:])
 
-        await ctx.send(f"**DKP Log for {user.mention}:**\n```{log_text}```")
+        await ctx.send(f"**DKP Log for {ctx.guild.get_member(user.id).display_name}:**\n```{log_text}```")
 
     except Exception as e:
         await ctx.send(f"Error fetching logs: {e}")
@@ -742,8 +790,8 @@ async def log_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
         await ctx.send(f"{ctx.author.mention}, wait {error.retry_after:.1f} s before next command reuse!")
 
-
 @bot.command()
+@commands.cooldown(1, 30, commands.BucketType.user)
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
 async def alog(ctx, auction_id: int):
     """Shows the auction log history for a given auction ID."""
@@ -789,6 +837,47 @@ async def alog(ctx, auction_id: int):
 
     except Exception as e:
         await ctx.send(f"Error fetching auction history: {e}")
+# Обработчик ошибки, если команда используется слишком часто
+@alog.error
+async def alog_error(ctx, error):
+    if isinstance(error, commands.CommandOnCooldown):
+        await ctx.send(f"{ctx.author.mention}, wait {error.retry_after:.1f} s before next command reuse!")
+
+
+@bot.command()
+@commands.has_any_role('Admin', 'Moderator', 'Leader')
+# Функция для загрузки файлов на GitHub
+def upload_files_to_github(github_token, repo_name, files, folder="reserv"):
+    # Авторизация через токен
+    g = Github(github_token)
+    repo = g.get_repo(repo_name)
+
+    # Проверяем существование папки в репозитории
+    try:
+        contents = repo.get_contents(folder)
+    except:
+        # Если папки нет, создаем её
+        contents = repo.create_file(f"{folder}/.empty", "Initial commit to create the folder", "")
+
+    # Загрузка файлов в репозиторий
+    for file_path in files:
+        file_name = os.path.basename(file_path)
+        with open(file_path, "r") as f:
+            content = f.read()
+        
+        # Проверяем, существует ли файл, и обновляем его, если нужно
+        try:
+            file_in_repo = repo.get_contents(f"{folder}/{file_name}")
+            repo.update_file(file_in_repo.path, f"Update {file_name}", content, file_in_repo.sha)
+            print(f"Updated {file_name} in repository.")
+        except:
+            # Если файл не существует, создаем новый
+            repo.create_file(f"{folder}/{file_name}", f"Upload {file_name}", content)
+            print(f"Uploaded {file_name} to repository.")
+
+
+
+
 
 
 
