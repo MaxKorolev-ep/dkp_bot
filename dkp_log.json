@@ -1,132 +1,78 @@
 {
-    "timestamp": "$(date)",
-    "log": "New log entry",
-    "351155870500913156": {
-        "display_name": "Twinki",
+    "216609984794853378": {
+        "display_name": "HaroowHold",
         "logs": [
             {
-                "timestamp": "[2025-03-04 09:15:28]",
+                "timestamp": "[2025-03-05 19:08:17]",
                 "action": "Added",
-                "amount": 100000,
-                "description": "chackname"
-            },
-            {
-                "timestamp": "[2025-03-04 09:16:44]",
-                "action": "Added",
-                "amount": 100,
-                "description": "1"
-            },
-            {
-                "timestamp": "[2025-03-04 09:17:02]",
-                "action": "Added",
-                "amount": 100,
-                "description": "2"
-            },
-            {
-                "timestamp": "[2025-03-04 09:17:49]",
-                "action": "Added",
-                "amount": 100,
-                "description": "wtf"
+                "amount": 10000,
+                "description": "guild boss participation"
             }
         ]
     },
-    "316168392275001358": {
-        "display_name": "Bazookahands",
+    "1344718860602966117": {
+        "display_name": "Isheth",
         "logs": [
             {
-                "timestamp": "[2025-03-04 10:01:14]",
-                "action": "Remove",
-                "amount": 10,
-                "description": "winner of auction ID 4"
-            },
-            {
-                "timestamp": "[2025-03-04 10:05:44]",
-                "action": "Remove",
-                "amount": 5,
-                "description": "winner of auction ID 5"
-            },
-            {
-                "timestamp": "[2025-03-04 10:08:26]",
-                "action": "Remove",
-                "amount": 6,
-                "description": "winner of auction ID 6"
-            },
-            {
-                "timestamp": "[2025-03-04 11:02:01]",
+                "timestamp": "[2025-03-05 19:08:17]",
                 "action": "Added",
-                "amount": 10,
-                "description": "text mass add"
-            },
-            {
-                "timestamp": "[2025-03-04 11:02:40]",
-                "action": "Added",
-                "amount": 10,
-                "description": "test mass add"
-            },
-            {
-                "timestamp": "[2025-03-04 11:03:02]",
-                "action": "Added",
-                "amount": 10,
-                "description": "test mass add"
-            },
-            {
-                "timestamp": "[2025-03-04 11:12:56]",
-                "action": "Removed",
-                "amount": 10,
-                "description": "test mass removing"
-            },
-            {
-                "timestamp": "[2025-03-04 11:14:14]",
-                "action": "Removed",
-                "amount": 20900,
-                "description": "test"
-            },
-            {
-                "timestamp": "[2025-03-04 11:37:06]",
-                "action": "Added",
-                "amount": 10,
-                "description": "10"
-            },
-            {
-                "timestamp": "[2025-03-04 11:37:52]",
-                "action": "Remove",
-                "amount": 5,
-                "description": "winner of auction ID 17"
-            },
-            {
-                "timestamp": "[2025-03-04 11:52:16]",
-                "action": "Remove",
-                "amount": 2,
-                "description": "winner of auction ID 18"
-            },
-            {
-                "timestamp": "[2025-03-04 12:03:52]",
-                "action": "Remove",
-                "amount": 1,
-                "description": "winner of auction ID 19"
+                "amount": 10000,
+                "description": "guild boss participation"
             }
         ]
     },
-    "576508116871675954": {
-        "display_name": "Retka28",
+    "649534983303856140": {
+        "display_name": "Piiisarz",
         "logs": [
             {
-                "timestamp": "[2025-03-04 11:02:40]",
+                "timestamp": "[2025-03-05 19:08:17]",
                 "action": "Added",
-                "amount": 10,
-                "description": "test mass add"
-            },
+                "amount": 10000,
+                "description": "guild boss participation"
+            }
+        ]
+    },
+    "1181633955531870269": {
+        "display_name": "Randy187",
+        "logs": [
             {
-                "timestamp": "[2025-03-04 11:03:02]",
+                "timestamp": "[2025-03-05 19:08:17]",
                 "action": "Added",
-                "amount": 10,
-                "description": "test mass add"
-            },
+                "amount": 10000,
+                "description": "guild boss participation"
+            }
+        ]
+    },
+    "228722534487425034": {
+        "display_name": "Mackeu",
+        "logs": [
             {
-                "timestamp": "[2025-03-04 11:12:56]",
-                "action": "Removed",
-                "amount": 10,
-                "description": "test mass removing"
+                "timestamp": "[2025-03-05 19:08:17]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "guild boss participation"
+            }
+        ]
+    },
+    "491318975066669056": {
+        "display_name": "PartyLuder",
+        "logs": [
+            {
+                "timestamp": "[2025-03-05 19:08:17]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "guild boss participation"
+            }
+        ]
+    },
+    "212616548593041408": {
+        "display_name": "Devolia",
+        "logs": [
+            {
+                "timestamp": "[2025-03-05 19:08:17]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "guild boss participation"
             }
         ]
     }
