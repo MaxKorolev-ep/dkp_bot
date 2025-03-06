@@ -698,11 +698,28 @@ async def mydkp(interaction: discord.Interaction):
 @bot.tree.command(name="dkp", description="Shows a user's DKP points")
 async def dkp(interaction: discord.Interaction, user: discord.Member):
     """Shows a user's DKP points."""
+    await interaction.response.defer()
+    print(f"11111111")
     dkp_data = await load_dkp_data()
+    print(f"sdfdsfds")
+
     user_data = dkp_data.get(str(user.id), {"dkp": 0})
     dkp_points = user_data["dkp"]
+    await interaction.followup.send(f"{user.display_name} has {dkp_points} DKP.")
+    
+@bot.tree.command(name="ddkp", description="Shows a user's DKP points")
+async def ddkp(interaction: discord.Interaction, user: discord.Member):
+    """Shows a user's DKP points."""
+    await interaction.response.defer()
+    print(f"11111111")
+    dkp_data = await load_dkp_data()
+    print(f"sdfdsfds")
 
-    await interaction.response.send_message(f"{user.display_name} has {dkp_points} DKP.")
+    user_data = dkp_data.get(str(user.id), {"dkp": 0})
+    dkp_points = user_data["dkp"]
+    await interaction.followup.send(f"{user.display_name} has {dkp_points} DKP.")
+
+
 
 #Show DKP of top10 members
 @bot.tree.command(name="topdkp", description="Shows top10 users")
@@ -1003,14 +1020,9 @@ async def on_ready():
     print(f"Synced {len(synced)} commands: {[cmd.name for cmd in synced]}")
 
 @bot.command()
-async def sync(ctx):
-    await bot.tree.sync()
-    await ctx.send("Commands synced!")
-
-@bot.command()
 async def clearsync(ctx):
     bot.tree.clear_commands(guild=None)  # Очистка всех команд
-    await bot.tree.sync()
+    await bot.tree.sync(guild=discord.Object(id=1318263619926102137))
     await ctx.send("Cleared and resynced commands!")
 
 
