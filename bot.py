@@ -363,10 +363,11 @@ async def sauc(ctx, auction_name: str, item: str, description: str, duration: in
         # Отправляем сообщение в канал #auctions1
         embed = discord.Embed(
         title=f"Auction boss: {auction_name} (__ID: {auction_id}__)",
-        description=f"# @everyone, the auction for **{item}** has started!\n"
-                f"## Trait: **{description}**\n"
+        description=f"# @everyone, the auction has started!\n"
+                f"## Item: {item}\n"
+                f"## Trait: {description}\n"
                 f"### Bids are accepted for __{format_seconds(duration)}__.\n"
-                f"### To place a bid, use the command: **/bid {auction_id} amount**.",
+                f"### To place a bid, use the command: __/bid {auction_id} amount__.",
         color=discord.Color.random()  # Можно заменить на любой цвет, например, red, blue, purple и т. д.
         )
         # Отправляем сообщение в канал #auctions1 с встраиваемым сообщением
@@ -707,19 +708,6 @@ async def dkp(interaction: discord.Interaction, user: discord.Member):
     dkp_points = user_data["dkp"]
     await interaction.followup.send(f"{user.display_name} has {dkp_points} DKP.")
     
-@bot.tree.command(name="ddkp", description="Shows a user's DKP points")
-async def ddkp(interaction: discord.Interaction, user: discord.Member):
-    """Shows a user's DKP points."""
-    await interaction.response.defer()
-    print(f"11111111")
-    dkp_data = await load_dkp_data()
-    print(f"sdfdsfds")
-
-    user_data = dkp_data.get(str(user.id), {"dkp": 0})
-    dkp_points = user_data["dkp"]
-    await interaction.followup.send(f"{user.display_name} has {dkp_points} DKP.")
-
-
 
 #Show DKP of top10 members
 @bot.tree.command(name="topdkp", description="Shows top10 users")
