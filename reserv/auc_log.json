@@ -1,0 +1,127 @@
+{
+    "last_id": 7,
+    "auctions": {
+        "Daigon_1": {
+            "id": 1,
+            "name": "Daigon",
+            "item": "Band of the Silent One",
+            "description": "Max Mana",
+            "created_at": "[2025-03-13 12:10:53]",
+            "date_of_end": "[2025-03-14 17:10:53]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 1
+                }
+            ]
+        },
+        "Daigon_2": {
+            "id": 2,
+            "name": "Daigon",
+            "item": "Daigons Stormblade",
+            "description": "Critical Hit Chance",
+            "created_at": "[2025-03-13 12:12:05]",
+            "date_of_end": "[2025-03-14 17:12:05]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 1100
+                },
+                {
+                    "user_id": 1181633955531870269,
+                    "amount": 1000
+                }
+            ]
+        },
+        "Daigon_3": {
+            "id": 3,
+            "name": "Daigon",
+            "item": "Eldritch Whisper",
+            "description": "Stun Ressistance",
+            "created_at": "[2025-03-13 12:12:59]",
+            "date_of_end": "[2025-03-14 17:12:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 200
+                },
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 1
+                }
+            ]
+        },
+        "Daigon_4": {
+            "id": 4,
+            "name": "Daigon",
+            "item": "Eldritch Whisper",
+            "description": "Health Regen",
+            "created_at": "[2025-03-13 12:13:31]",
+            "date_of_end": "[2025-03-14 17:13:31]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 1
+                }
+            ]
+        },
+        "Daigon_5": {
+            "id": 5,
+            "name": "Daigon",
+            "item": "Imperial Seekers Trouserd",
+            "description": "Mana Regen",
+            "created_at": "[2025-03-13 12:14:10]",
+            "date_of_end": "[2025-03-14 17:14:10]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 10000
+                },
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 5001
+                }
+            ]
+        },
+        "Daigon_6": {
+            "id": 6,
+            "name": "Daigon",
+            "item": "Deep Draconic Gorget",
+            "description": "Mana Regen",
+            "created_at": "[2025-03-13 12:14:57]",
+            "date_of_end": "[2025-03-14 17:14:57]",
+            "top_3_bids": [
+                {
+                    "user_id": 216609984794853378,
+                    "amount": 20000
+                },
+                {
+                    "user_id": 128128896129302528,
+                    "amount": 5551
+                },
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 5550
+                }
+            ]
+        },
+        "Daigon_7": {
+            "id": 7,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Range",
+            "created_at": "[2025-03-13 12:15:28]",
+            "date_of_end": "[2025-03-14 17:15:28]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 505
+                },
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 500
+                }
+            ]
+        }
+    }
+}
