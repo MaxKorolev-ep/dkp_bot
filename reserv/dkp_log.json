@@ -24,6 +24,12 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "second boss participation 03.13"
+            },
+            {
+                "timestamp": "[2025-03-14 17:13:00]",
+                "action": "Remove",
+                "amount": 200,
+                "description": "winner of auction ID 3"
             }
         ]
     },
@@ -81,6 +87,12 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "second boss participation 03.13"
+            },
+            {
+                "timestamp": "[2025-03-14 17:14:10]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 5"
             }
         ]
     },
@@ -147,6 +159,12 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "second boss participation 03.13"
+            },
+            {
+                "timestamp": "[2025-03-14 17:14:58]",
+                "action": "Remove",
+                "amount": 20000,
+                "description": "winner of auction ID 6"
             }
         ]
     },
@@ -241,6 +259,35 @@
                 "action": "Added",
                 "amount": 6529,
                 "description": "rep 03.06"
+            }
+        ]
+    },
+    "809683968404095027": {
+        "display_name": "Chemical",
+        "logs": [
+            {
+                "timestamp": "[2025-03-14 17:11:00]",
+                "action": "Remove",
+                "amount": 1,
+                "description": "winner of auction ID 1"
+            },
+            {
+                "timestamp": "[2025-03-14 17:12:05]",
+                "action": "Remove",
+                "amount": 1100,
+                "description": "winner of auction ID 2"
+            },
+            {
+                "timestamp": "[2025-03-14 17:13:31]",
+                "action": "Remove",
+                "amount": 1,
+                "description": "winner of auction ID 4"
+            },
+            {
+                "timestamp": "[2025-03-14 17:15:29]",
+                "action": "Remove",
+                "amount": 505,
+                "description": "winner of auction ID 7"
             }
         ]
     }
