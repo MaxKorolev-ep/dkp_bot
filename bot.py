@@ -36,7 +36,10 @@ auctions = {}
 AUC_LOG_FILE = "auc_log.json"
 # Словарь для хранения ID сообщений об аукционах
 auction_messages = {}
-
+# Храним время последних ставок: {auction_id: {user_id: timestamp}}
+last_bid_times = {}
+# Храним время последнего удаления ставки (ключ - user_id)
+last_dbid_times = {}
 
 async def load_dkp_data():
     async with dkp_lock:
@@ -52,14 +55,18 @@ async def save_dkp_data(data):
         with open(DKP_FILE, "w") as f:
             json.dump(data, f, indent=4)
 
-# Функция для автодополнения списка активных аукционов
+# Функция для автодополнения списка активных аукционов (добавляем описание)
 async def auction_autocomplete(interaction: discord.Interaction, current: str):
-    """Предлагает пользователю список активных аукционов"""
+    """Предлагает пользователю список активных аукционов с их описанием"""
     return [
-        app_commands.Choice(name=f"ID {auc_id}: {data['item']}", value=str(auc_id))
+        app_commands.Choice(
+            name=f"ID {auc_id}: {data['item']} ({data['description']})", 
+            value=str(auc_id)
+        )
         for auc_id, data in auctions.items()
-        if current.lower() in str(auc_id) or current.lower() in data["item"].lower()
+        if current.lower() in str(auc_id) or current.lower() in data["item"].lower() or current.lower() in data["description"].lower()
     ][:25]  # Discord разрешает максимум 25 вариантов
+
             
 @bot.command()
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
@@ -144,20 +151,26 @@ async def bids(interaction: discord.Interaction, auction_id: str):
 
     bids_message = f"Bids for **{auction['item']}** (Auction ID: {auction_id}):\n"
     for bid in auction["bids"]:
-        user = await bot.fetch_user(bid["user"])
-        bids_message += f"{user.display_name}: {bid['amount']} DKP\n"
+        guild = interaction.guild  # Get the server (guild)
+        member = guild.get_member(bid["user"])  # Get the member from the guild
 
+        if member:
+            display_name = member.display_name  # Get the server nickname
+        else:
+            display_name = "Unknown User"  # Fallback in case the user is not in the server
+        bids_message += f"{display_name}: {bid['amount']} DKP\n"
     await interaction.response.send_message(bids_message)
 
 # Функция для ставки на конкретный аукцион
 @bot.tree.command(name="bid", description="Places a bid on an auction using the auction ID.")
 @app_commands.autocomplete(auction_id=auction_autocomplete)
 async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
-    """Размещает ставку на аукцион с указанным ID"""
+    """Размещает ставку на аукцион с указанным ID (ограничение 30 минут, ставка должна быть выше текущей)."""
     user = interaction.user
     auction_id = int(auction_id)  # Преобразуем в int, так как autocomplete возвращает str
+    current_time = time.time()
 
-    # Ищем канал, куда отправлять информацию о ставках
+    # Проверяем, существует ли канал аукционов
     channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
     if not channel:
         await interaction.response.send_message("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
@@ -170,20 +183,41 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
         return
 
     # Проверяем, не завершился ли аукцион
-    if time.time() > auction["end_time"]:
+    if current_time > auction["end_time"]:
         await interaction.response.send_message(f"The auction for **{auction['item']}** has ended!", ephemeral=True)
         return
+
+    # Получаем текущую максимальную ставку
+    highest_bid = auction.get("highest_bid", 0)
+
+    # Проверяем, что ставка выше текущей
+    if amount <= highest_bid + 99:
+        await interaction.response.send_message(
+            f"❌ Your bid must be **higher on 100** than the current highest bid (**{highest_bid} DKP**).",
+            ephemeral=True
+        )
+        return
+
+    # **Проверяем таймер (30 минут между ставками на один аукцион)**
+    if auction_id in last_bid_times and user.id in last_bid_times[auction_id]:
+        last_bid_time = last_bid_times[auction_id][user.id]
+        time_since_last_bid = current_time - last_bid_time
+
+        if time_since_last_bid < 100:  # 1800 секунд = 30 минут
+            remaining_time = 100 - time_since_last_bid
+            minutes = int(remaining_time // 60)
+            seconds = int(remaining_time % 60)
+            await interaction.response.send_message(
+                f"⏳ {user.mention}, you can bid again in {minutes}m {seconds}s.",
+                ephemeral=True
+            )
+            return
 
     # Загружаем данные DKP пользователя
     dkp_data = await load_dkp_data()
     user_dkp = dkp_data.get(str(user.id), {"dkp": 0})["dkp"]
 
-    # Проверяем, есть ли уже ставка от пользователя и удаляем её перед новой ставкой
-    existing_bid = next((b for b in auction["bids"] if b["user"] == user.id), None)
-    if existing_bid:
-        auction["bids"].remove(existing_bid)
-
-    # Подсчет общей суммы ставок пользователя **без учета старой ставки**
+    # Подсчет общей суммы ставок пользователя
     total_bids = sum(
         bid["amount"] for auc in auctions.values() for bid in auc["bids"] if bid["user"] == user.id
     )
@@ -191,40 +225,61 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
     # Проверяем, не превышает ли ставка баланс DKP
     if total_bids + amount > user_dkp:
         await interaction.response.send_message(
-            f"Total bids exceed your DKP balance ({user_dkp}). You cannot place this bid.",
+            f"❌ Total bids exceed your DKP balance ({user_dkp}). You cannot place this bid.",
             ephemeral=True
         )
         return
+
+    # **Обновляем время последней ставки**
+    if auction_id not in last_bid_times:
+        last_bid_times[auction_id] = {}
+    last_bid_times[auction_id][user.id] = current_time
 
     # Добавляем новую ставку
     auction["bids"].append({"user": user.id, "amount": amount})
 
     # Обновляем текущую максимальную ставку
-    highest_bid = max(auction["bids"], key=lambda b: b["amount"], default={"amount": 0})
-    auction["highest_bid"] = highest_bid["amount"]
-    auction["highest_bidder"] = highest_bid["user"]
-    
+    auction["highest_bid"] = amount
+    auction["highest_bidder"] = user.id
+
     embed = discord.Embed(
-    description=f"## {user.display_name} placed a bid of **{amount} DKP**.\n"
-                f"## Auction ID: **{auction_id}**\n"
-                f"## Item: **{auction['item']}**.",
-    color=discord.Color.green()  # Цвет рамки, можно заменить на любой
+        description=f"## {user.display_name} placed a bid of **{amount} DKP**.\n"
+                    f"## Auction ID: **{auction_id}**\n"
+                    f"## Item: **{auction['item']}**.",
+        color=discord.Color.green()
     )
-    
+
     # Отправляем сообщение в канал аукционов
     await channel.send(embed=embed)
 
     # Подтверждаем действие пользователю
-    await interaction.response.send_message(f"Your bid of {amount} DKP for **{auction['item']}** has been placed.", ephemeral=True)
+    await interaction.response.send_message(f"✅ Your bid of {amount} DKP for **{auction['item']}** has been placed.", ephemeral=True)
+
 
 # Функция для удаления ставки на конкретный аукцион
 @bot.tree.command(name="dbid", description="Removing a bid on an auction using the auction ID.")
 @app_commands.autocomplete(auction_id=auction_autocomplete)
 async def dbid(interaction: discord.Interaction, auction_id: str):
-    """Removes a user's bid from the auction by auction ID."""
+    """Removes a user's bid from the auction by auction ID (limited to once per 24 hours)."""
     global auctions
     user = interaction.user
     auction_id = int(auction_id)  # Преобразуем в int, так как autocomplete возвращает str
+    current_time = time.time()
+    
+    # Проверяем, использовал ли пользователь эту команду за последние 24 часа
+    if user.id in last_dbid_times:
+        last_used_time = last_dbid_times[user.id]
+        time_since_last_use = current_time - last_used_time
+
+        if time_since_last_use < 86400:  # 86400 секунд = 24 часа
+            remaining_time = 86400 - time_since_last_use
+            hours = int(remaining_time // 3600)
+            minutes = int((remaining_time % 3600) // 60)
+            await interaction.response.send_message(
+                f"⏳ {user.mention}, you can remove a bid again in **{hours}h {minutes}m**.",
+                ephemeral=True
+            )
+            return
 
     # Проверяем, существует ли аукцион с таким ID
     if auction_id not in auctions:
@@ -241,7 +296,10 @@ async def dbid(interaction: discord.Interaction, auction_id: str):
 
     # Удаляем ставку пользователя
     auction["bids"].remove(existing_bid)
-    
+
+    # **Обновляем время последнего использования команды**
+    last_dbid_times[user.id] = current_time
+
     # Ищем канал, куда отправлять информацию о ставках
     channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
     if not channel:
@@ -256,14 +314,17 @@ async def dbid(interaction: discord.Interaction, auction_id: str):
     else:
         auction["highest_bid"] = 0
         auction["highest_bidder"] = None
-        
+
     embed = discord.Embed(
-    description=f"## {user.display_name} has deleted their bet from the auction with ID '{auction_id}'.",
-    color=discord.Color.red()  # Цвет рамки, можно заменить на любой
+        description=f"## {user.display_name} has deleted their bet from the auction with ID '{auction_id}'.",
+        color=discord.Color.red()
     )
 
     await channel.send(embed=embed)
-    await interaction.response.send_message(f"{user.display_name}, your bid has been removed from the auction with ID '{auction_id}'.", ephemeral=True)
+    await interaction.response.send_message(
+        f"✅ {user.display_name}, your bid has been removed from the auction with ID '{auction_id}'.",
+        ephemeral=True
+    )
         
 async def log_auction_creation(auction_id, auction_name, item, description, end_time):
     """Записывает в лог информацию о новом аукционе."""
@@ -440,7 +501,7 @@ async def endauction(ctx, auction_id: int):
                 result_message += f"### Third bid: **{third_place.display_name}** with a bid of {third_place_bid} DKP.\n"
             
             embed = discord.Embed(
-                description=f"# @everyone, the auction with ID **{auction_id}** for item **{auction['item']}** has ended!\n{result_message}",
+                description=f"# @everyone, the auction with ID **{auction_id}** for item **{auction['item']}: {auction['description']}** has ended!\n{result_message}",
                 color=discord.Color.random()  # Можно заменить на любой цвет, например, red, blue, purple и т. д.
             )
             
@@ -455,7 +516,7 @@ async def endauction(ctx, auction_id: int):
             await channel.send(embed=embed)
     else:
         embed = discord.Embed(
-                description=f"# @everyone, the auction with ID **{auction_id}** (item: {auction['item']}) has ended\n"
+                description=f"# @everyone, the auction with ID **{auction_id}** (item: {auction['item']}: {auction['description']}) has ended\n"
                             f"## But no bids were placed.",
                 color=discord.Color.red()  # Можно заменить на любой цвет, например, red, blue, purple и т. д.
             )
