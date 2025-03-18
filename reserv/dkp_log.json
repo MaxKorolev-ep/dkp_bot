@@ -29,6 +29,24 @@
                 "action": "Added",
                 "amount": 5300,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            },
+            {
+                "timestamp": "[2025-03-17 21:13:01]",
+                "action": "Remove",
+                "amount": 9000,
+                "description": "winner of auction ID 12"
+            },
+            {
+                "timestamp": "[2025-03-18 10:02:47]",
+                "action": "Added",
+                "amount": 9000,
+                "description": "bot didnt see /dbid"
             }
         ]
     },
@@ -40,6 +58,12 @@
                 "action": "Added",
                 "amount": 5079,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
             }
         ]
     },
@@ -62,6 +86,18 @@
                 "action": "Added",
                 "amount": 4050,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            },
+            {
+                "timestamp": "[2025-03-17 21:11:51]",
+                "action": "Remove",
+                "amount": 41000,
+                "description": "winner of auction ID 9"
             }
         ]
     },
@@ -73,6 +109,18 @@
                 "action": "Added",
                 "amount": 11838,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            },
+            {
+                "timestamp": "[2025-03-17 21:11:00]",
+                "action": "Remove",
+                "amount": 30000,
+                "description": "winner of auction ID 8"
             }
         ]
     },
@@ -95,6 +143,24 @@
                 "action": "Added",
                 "amount": 10505,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            },
+            {
+                "timestamp": "[2025-03-17 21:11:59]",
+                "action": "Remove",
+                "amount": 22000,
+                "description": "winner of auction ID 10"
+            },
+            {
+                "timestamp": "[2025-03-17 21:12:26]",
+                "action": "Remove",
+                "amount": 100,
+                "description": "winner of auction ID 11"
             }
         ]
     },
@@ -106,6 +172,12 @@
                 "action": "Added",
                 "amount": 8019,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
             }
         ]
     },
@@ -117,6 +189,12 @@
                 "action": "Added",
                 "amount": 11878,
                 "description": "7907 rep 15.03 + 3971 rep 06.03"
+            },
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
             }
         ]
     },
@@ -128,6 +206,18 @@
                 "action": "Added",
                 "amount": 6452,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            },
+            {
+                "timestamp": "[2025-03-17 21:13:35]",
+                "action": "Remove",
+                "amount": 500,
+                "description": "winner of auction ID 13"
             }
         ]
     },
@@ -139,6 +229,12 @@
                 "action": "Added",
                 "amount": 6223,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
             }
         ]
     },
@@ -161,6 +257,200 @@
                 "action": "Added",
                 "amount": 9962,
                 "description": "933 03.06 + 9029 03.15"
+            },
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "338644317226926082": {
+        "display_name": "Brutrak21",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 17:04:36]",
+                "action": "Added",
+                "amount": 2264,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "145122063173156864": {
+        "display_name": "Reminissions",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "128128896129302528": {
+        "display_name": "SisterPink",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "466197842047008769": {
+        "display_name": "Zarokar",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "241966397419290624": {
+        "display_name": "Dr.Criminal",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:44:41]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "274316343010918400": {
+        "display_name": "MsBeanie",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "267245810209652737": {
+        "display_name": "trib00n",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "316168392275001358": {
+        "display_name": "Bazookahands",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "1307770612122517575": {
+        "display_name": "Achnel/Ximbomba",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "576508116871675954": {
+        "display_name": "Retka28",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "264034161587650560": {
+        "display_name": "赤毛の女の子 (Korean)",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "185368210378326016": {
+        "display_name": "Linilu",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "368804477089873921": {
+        "display_name": "Dimas",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "205976132778983425": {
+        "display_name": "jjlevii",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:45:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation 03.16"
+            }
+        ]
+    },
+    "1311707950322286605": {
+        "display_name": "SenseiNobunaga",
+        "logs": [
+            {
+                "timestamp": "[2025-03-16 18:54:28]",
+                "action": "Added",
+                "amount": 49605,
+                "description": "(10000 03.16 + 10000 03.09 + 5000 03.13) bosses + (8555 03.06 + 16050 03.15) rep)"
+            },
+            {
+                "timestamp": "[2025-03-18 10:03:31]",
+                "action": "Removed",
+                "amount": 8000,
+                "description": "auc ID 12 winner"
+            }
+        ]
+    },
+    "736012769052196884": {
+        "display_name": "zXToshiroXz",
+        "logs": [
+            {
+                "timestamp": "[2025-03-18 07:46:31]",
+                "action": "Added",
+                "amount": 12769,
+                "description": "6047 03.06 + 6722 03.15) rep"
             }
         ]
     }
