@@ -40,6 +40,8 @@ auction_messages = {}
 last_bid_times = {}
 # Храним время последнего удаления ставки (ключ - user_id)
 last_dbid_times = {}
+# Список доступных ролей
+AVAILABLE_ROLES = ["Tank", "DD", "Healer"]
 
 async def load_dkp_data():
     async with dkp_lock:
@@ -67,6 +69,60 @@ async def auction_autocomplete(interaction: discord.Interaction, current: str):
         if current.lower() in str(auc_id) or current.lower() in data["item"].lower() or current.lower() in data["description"].lower()
     ][:25]  # Discord разрешает максимум 25 вариантов
 
+# Функция для автодополнения списка активных ролей (добавляем описание)
+async def role_autocomplete(interaction: discord.Interaction, current: str):
+    """Автодополнение списка ролей."""
+    return [
+        app_commands.Choice(name=role, value=role)
+        for role in AVAILABLE_ROLES
+        if current.lower() in role.lower()
+    ]
+
+# Функция для добавления ролей
+@bot.tree.command(name="addroles", description="Add yourself one or multiple roles: Tank, DD, Healer.")
+@app_commands.autocomplete(roles=role_autocomplete)
+async def add_roles(interaction: discord.Interaction, roles: str):
+    """Позволяет пользователю добавить себе одну или несколько ролей."""
+    guild = interaction.guild
+    member = interaction.user
+
+    # Разделяем введенные роли по запятой и убираем лишние пробелы
+    selected_roles = [role.strip() for role in roles.split(",") if role.strip() in AVAILABLE_ROLES]
+
+    if not selected_roles:
+        await interaction.response.send_message(f"❌ No valid roles selected. Available roles: {', '.join(AVAILABLE_ROLES)}.", ephemeral=True)
+        return
+
+    added_roles = []
+    for role_name in selected_roles:
+        role_obj = discord.utils.get(guild.roles, name=role_name)
+        if role_obj and role_obj not in member.roles:
+            await member.add_roles(role_obj)
+            added_roles.append(role_name)
+
+    if added_roles:
+        await interaction.response.send_message(f"✅ Added roles: {', '.join(added_roles)}.", ephemeral=True)
+    else:
+        await interaction.response.send_message(f"⚠️ You already have all selected roles.", ephemeral=True)
+
+# Функция для показа людей из списка ролей
+@bot.tree.command(name="listrole", description="Shows all members with the specified role.")
+async def list_role(interaction: discord.Interaction, role: discord.Role):
+    """Показывает всех пользователей с данной ролью."""
+    members_with_role = [member.mention for member in role.members]
+
+    if not members_with_role:
+        await interaction.response.send_message(f"❌ No members have the role **{role.name}**.", ephemeral=True)
+        return
+
+    members_list = "\n".join(members_with_role)
+    embed = discord.Embed(
+        title=f"Members with role: {role.name}",
+        description=members_list,
+        color=role.color
+    )
+
+    await interaction.response.send_message(embed=embed)
             
 @bot.command()
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
@@ -165,46 +221,35 @@ async def bids(interaction: discord.Interaction, auction_id: str):
 @bot.tree.command(name="bid", description="Places a bid on an auction using the auction ID.")
 @app_commands.autocomplete(auction_id=auction_autocomplete)
 async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
-    """Размещает ставку на аукцион с указанным ID (ограничение 30 минут, ставка должна быть выше текущей)."""
+    """Размещает ставку на аукцион с указанным ID. Если ставка перебита, предыдущему лидеру возвращается DKP."""
     user = interaction.user
-    auction_id = int(auction_id)  # Преобразуем в int, так как autocomplete возвращает str
+    auction_id = int(auction_id)
     current_time = time.time()
 
-    # Проверяем, существует ли канал аукционов
     channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
     if not channel:
         await interaction.response.send_message("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
         return
 
-    # Проверяем, существует ли аукцион
     auction = auctions.get(auction_id)
     if not auction:
         await interaction.response.send_message(f"Auction with ID '{auction_id}' does not exist.", ephemeral=True)
         return
 
-    # Проверяем, не завершился ли аукцион
     if current_time > auction["end_time"]:
         await interaction.response.send_message(f"The auction for **{auction['item']}** has ended!", ephemeral=True)
         return
 
-    # Получаем текущую максимальную ставку
     highest_bid = auction.get("highest_bid", 0)
-
-    # Проверяем, что ставка выше текущей
-    if amount <= highest_bid + 99:
-        await interaction.response.send_message(
-            f"❌ Your bid must be **higher on 100** than the current highest bid (**{highest_bid} DKP**).",
-            ephemeral=True
-        )
-        return
+    highest_bidder = auction.get("highest_bidder", None)  # ID текущего лидера
 
     # **Проверяем таймер (30 минут между ставками на один аукцион)**
     if auction_id in last_bid_times and user.id in last_bid_times[auction_id]:
         last_bid_time = last_bid_times[auction_id][user.id]
         time_since_last_bid = current_time - last_bid_time
 
-        if time_since_last_bid < 100:  # 1800 секунд = 30 минут
-            remaining_time = 100 - time_since_last_bid
+        if time_since_last_bid < 10:  # 1800 секунд = 30 минут
+            remaining_time = 10 - time_since_last_bid
             minutes = int(remaining_time // 60)
             seconds = int(remaining_time % 60)
             await interaction.response.send_message(
@@ -212,35 +257,50 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
                 ephemeral=True
             )
             return
-
-    # Загружаем данные DKP пользователя
-    dkp_data = await load_dkp_data()
-    user_dkp = dkp_data.get(str(user.id), {"dkp": 0})["dkp"]
-
-    # Подсчет общей суммы ставок пользователя
-    total_bids = sum(
-        bid["amount"] for auc in auctions.values() for bid in auc["bids"] if bid["user"] == user.id
-    )
-
-    # Проверяем, не превышает ли ставка баланс DKP
-    if total_bids + amount > user_dkp:
+            
+    if amount <= highest_bid + 99:
         await interaction.response.send_message(
-            f"❌ Total bids exceed your DKP balance ({user_dkp}). You cannot place this bid.",
+            f"❌ Your bid must be **higher on 100** than the current highest bid (**{highest_bid} DKP**).",
             ephemeral=True
         )
         return
 
-    # **Обновляем время последней ставки**
+    # Загружаем данные DKP
+    dkp_data = await load_dkp_data()
+    user_dkp = dkp_data.get(str(user.id), {"dkp": 0})["dkp"]
+
+    # Подсчет уже заблокированных (использованных) DKP
+    locked_dkp = sum(
+        bid["amount"] for auc in auctions.values() for bid in auc["bids"] if bid["user"] == user.id
+    )
+
+    # Проверяем, может ли пользователь сделать ставку
+    available_dkp = user_dkp - locked_dkp  # Свободные DKP
+    if amount > available_dkp:
+        await interaction.response.send_message(
+            f"❌ You only have **{available_dkp} DKP** available to bid. You cannot place this bid.",
+            ephemeral=True
+        )
+        return
+
+    # **Возвращаем DKP предыдущему лидеру (разблокируем, но не увеличиваем баланс)**
+    if highest_bidder:
+        prev_bid = next((b for b in auction["bids"] if b["user"] == highest_bidder), None)
+        if prev_bid:
+            auction["bids"].remove(prev_bid)  # Удаляем ставку из списка
+
+        prev_leader = await bot.fetch_user(highest_bidder)
+        await channel.send(f"🔄 {prev_leader.mention}, your **{highest_bid} DKP** have been unlocked.")
+
+    # **Обновляем аукцион с новой ставкой**
+    auction["highest_bid"] = amount
+    auction["highest_bidder"] = user.id
+    auction["bids"].append({"user": user.id, "amount": amount})
+
+    # **Обновляем таймер для пользователя**
     if auction_id not in last_bid_times:
         last_bid_times[auction_id] = {}
     last_bid_times[auction_id][user.id] = current_time
-
-    # Добавляем новую ставку
-    auction["bids"].append({"user": user.id, "amount": amount})
-
-    # Обновляем текущую максимальную ставку
-    auction["highest_bid"] = amount
-    auction["highest_bidder"] = user.id
 
     embed = discord.Embed(
         description=f"## {user.display_name} placed a bid of **{amount} DKP**.\n"
@@ -249,62 +309,44 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
         color=discord.Color.green()
     )
 
-    # Отправляем сообщение в канал аукционов
     await channel.send(embed=embed)
-
-    # Подтверждаем действие пользователю
     await interaction.response.send_message(f"✅ Your bid of {amount} DKP for **{auction['item']}** has been placed.", ephemeral=True)
 
-
 # Функция для удаления ставки на конкретный аукцион
-@bot.tree.command(name="dbid", description="Removing a bid on an auction using the auction ID.")
+@bot.tree.command(name="dbid", description="Admin removes a specific user's bid from an auction.")
 @app_commands.autocomplete(auction_id=auction_autocomplete)
-async def dbid(interaction: discord.Interaction, auction_id: str):
-    """Removes a user's bid from the auction by auction ID (limited to once per 24 hours)."""
+async def dbid(interaction: discord.Interaction, auction_id: str, member: discord.Member):
+    """Администратор может удалить ставку конкретного пользователя по ID аукциона."""
     global auctions
+    auction_id = int(auction_id)  # Преобразуем в int
     user = interaction.user
-    auction_id = int(auction_id)  # Преобразуем в int, так как autocomplete возвращает str
-    current_time = time.time()
-    
-    # Проверяем, использовал ли пользователь эту команду за последние 24 часа
-    if user.id in last_dbid_times:
-        last_used_time = last_dbid_times[user.id]
-        time_since_last_use = current_time - last_used_time
 
-        if time_since_last_use < 86400:  # 86400 секунд = 24 часа
-            remaining_time = 86400 - time_since_last_use
-            hours = int(remaining_time // 3600)
-            minutes = int((remaining_time % 3600) // 60)
-            await interaction.response.send_message(
-                f"⏳ {user.mention}, you can remove a bid again in **{hours}h {minutes}m**.",
-                ephemeral=True
-            )
-            return
+    # Проверяем, является ли пользователь администратором
+    if not any(role.permissions.administrator for role in user.roles):
+        await interaction.response.send_message("❌ You don't have permission to use this command.", ephemeral=True)
+        return
 
-    # Проверяем, существует ли аукцион с таким ID
+    # Проверяем, существует ли аукцион
     if auction_id not in auctions:
         await interaction.response.send_message(f"Auction with ID '{auction_id}' does not exist.", ephemeral=True)
         return
 
     auction = auctions[auction_id]
 
-    # Проверяем, есть ли ставка от этого пользователя
-    existing_bid = next((b for b in auction["bids"] if b["user"] == user.id), None)
+    # Проверяем, есть ли ставка от выбранного пользователя
+    existing_bid = next((b for b in auction["bids"] if b["user"] == member.id), None)
     if not existing_bid:
-        await interaction.response.send_message(f"{user.display_name}, you have no bid in the auction with ID '{auction_id}'.", ephemeral=True)
+        await interaction.response.send_message(f"❌ {member.display_name} has no bid in auction ID '{auction_id}'.", ephemeral=True)
         return
 
     # Удаляем ставку пользователя
     auction["bids"].remove(existing_bid)
 
-    # **Обновляем время последнего использования команды**
-    last_dbid_times[user.id] = current_time
-
-    # Ищем канал, куда отправлять информацию о ставках
-    channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
-    if not channel:
-        await interaction.response.send_message("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
-        return
+    # Возвращаем баланс DKP пользователю
+    dkp_data = await load_dkp_data()
+    user_dkp = dkp_data.get(str(member.id), {"dkp": 0})["dkp"]
+    dkp_data[str(member.id)]["dkp"] = user_dkp + existing_bid["amount"]
+    await save_dkp_data(dkp_data)
 
     # Обновляем максимальную ставку
     if auction["bids"]:
@@ -315,16 +357,25 @@ async def dbid(interaction: discord.Interaction, auction_id: str):
         auction["highest_bid"] = 0
         auction["highest_bidder"] = None
 
+    # Ищем канал для уведомления
+    channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
+    if not channel:
+        await interaction.response.send_message("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
+        return
+
+    # Отправляем уведомление
     embed = discord.Embed(
-        description=f"## {user.display_name} has deleted their bet from the auction with ID '{auction_id}'.",
+        description=f"## Admin {user.display_name} removed {member.display_name}'s bid from auction ID '{auction_id}'.\n"
+                    f"## {existing_bid['amount']} DKP returned to {member.mention}.",
         color=discord.Color.red()
     )
 
     await channel.send(embed=embed)
     await interaction.response.send_message(
-        f"✅ {user.display_name}, your bid has been removed from the auction with ID '{auction_id}'.",
+        f"✅ {member.display_name}'s bid has been removed from auction ID '{auction_id}', and their DKP has been refunded.",
         ephemeral=True
     )
+
         
 async def log_auction_creation(auction_id, auction_name, item, description, end_time):
     """Записывает в лог информацию о новом аукционе."""

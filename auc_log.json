@@ -1,5 +1,5 @@
 {
-    "last_id": 7,
+    "last_id": 13,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -120,6 +120,114 @@
                 {
                     "user_id": 316168392275001358,
                     "amount": 500
+                }
+            ]
+        },
+        "Naru_8": {
+            "id": 8,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "Collision chance",
+            "created_at": "[2025-03-16 19:10:59]",
+            "date_of_end": "[2025-03-17 21:10:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 790876999995490304,
+                    "amount": 30000
+                }
+            ]
+        },
+        "Naru_9": {
+            "id": 9,
+            "name": "Naru",
+            "item": "Narus Frenzied Greatblade",
+            "description": "Hit Chance",
+            "created_at": "[2025-03-16 19:11:50]",
+            "date_of_end": "[2025-03-17 21:11:50]",
+            "top_3_bids": [
+                {
+                    "user_id": 228722534487425034,
+                    "amount": 41000
+                },
+                {
+                    "user_id": 686229371224326145,
+                    "amount": 32300
+                },
+                {
+                    "user_id": 686229371224326145,
+                    "amount": 20000
+                }
+            ]
+        },
+        "Naru_10": {
+            "id": 10,
+            "name": "Naru",
+            "item": "Narus Frenzied Greatblade",
+            "description": "Critical Hit Chance",
+            "created_at": "[2025-03-16 19:11:58]",
+            "date_of_end": "[2025-03-17 21:11:58]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 22000
+                },
+                {
+                    "user_id": 609906277765611522,
+                    "amount": 10001
+                }
+            ]
+        },
+        "Naru_11": {
+            "id": 11,
+            "name": "Naru",
+            "item": "Immortal Reckoning",
+            "description": "Bind Resistance",
+            "created_at": "[2025-03-16 19:12:26]",
+            "date_of_end": "[2025-03-17 21:12:26]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Naru_12": {
+            "id": 12,
+            "name": "Naru",
+            "item": "Royal Praetors Plate Armor",
+            "description": "Melee Endurance",
+            "created_at": "[2025-03-16 19:13:01]",
+            "date_of_end": "[2025-03-17 21:13:01]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 9000
+                },
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 8000
+                },
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Naru_13": {
+            "id": 13,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Debuff duration",
+            "created_at": "[2025-03-16 19:13:35]",
+            "date_of_end": "[2025-03-17 21:13:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 351155870500913156,
+                    "amount": 500
+                },
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 200
                 }
             ]
         }
