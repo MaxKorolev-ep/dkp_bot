@@ -1,5 +1,5 @@
 {
-    "last_id": 13,
+    "last_id": 20,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -228,6 +228,104 @@
                 {
                     "user_id": 1233687696359034899,
                     "amount": 200
+                }
+            ]
+        },
+        "Naru_14": {
+            "id": 14,
+            "name": "Naru",
+            "item": "Sacred Repose Garb",
+            "description": "Melee Endurance",
+            "created_at": "[2025-03-23 18:41:29]",
+            "date_of_end": "[2025-03-25 06:41:29]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 2222
+                }
+            ]
+        },
+        "Naru_15": {
+            "id": 15,
+            "name": "Naru",
+            "item": "Eternal Champion Bindings",
+            "description": "Weaken resistance",
+            "created_at": "[2025-03-23 18:42:05]",
+            "date_of_end": "[2025-03-25 06:42:05]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_16": {
+            "id": 16,
+            "name": "Daigon",
+            "item": "Forbidden Eternal Chain",
+            "description": "debuff duration",
+            "created_at": "[2025-03-23 18:42:35]",
+            "date_of_end": "[2025-03-25 06:42:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_17": {
+            "id": 17,
+            "name": "Daigon",
+            "item": "Forbidden Eternal Chain",
+            "description": "skill damage risistance",
+            "created_at": "[2025-03-23 18:42:48]",
+            "date_of_end": "[2025-03-25 06:42:48]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_18": {
+            "id": 18,
+            "name": "Daigon",
+            "item": "Band of the silent one",
+            "description": "skill damage boost",
+            "created_at": "[2025-03-23 18:43:21]",
+            "date_of_end": "[2025-03-25 06:43:21]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 200
+                }
+            ]
+        },
+        "Daigon_19": {
+            "id": 19,
+            "name": "Daigon",
+            "item": "Band of the silent one",
+            "description": "Max mana",
+            "created_at": "[2025-03-23 18:43:36]",
+            "date_of_end": "[2025-03-25 06:43:36]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_20": {
+            "id": 20,
+            "name": "Daigon",
+            "item": "Daigons Charred Emberstaff",
+            "description": "Critical Hit Chance",
+            "created_at": "[2025-03-23 18:44:07]",
+            "date_of_end": "[2025-03-25 06:44:07]",
+            "top_3_bids": [
+                {
+                    "user_id": 576508116871675954,
+                    "amount": 90000
                 }
             ]
         }
