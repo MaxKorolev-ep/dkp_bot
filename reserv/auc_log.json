@@ -1,5 +1,5 @@
 {
-    "last_id": 20,
+    "last_id": 27,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -326,6 +326,104 @@
                 {
                     "user_id": 576508116871675954,
                     "amount": 90000
+                }
+            ]
+        },
+        "Daigon_21": {
+            "id": 21,
+            "name": "Daigon",
+            "item": "Daigons Stormblade",
+            "description": "Heavy Attack Chance",
+            "created_at": "[2025-03-30 18:32:48]",
+            "date_of_end": "[2025-04-01 06:32:48]",
+            "top_3_bids": [
+                {
+                    "user_id": 228722534487425034,
+                    "amount": 1000
+                }
+            ]
+        },
+        "Naru_22": {
+            "id": 22,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Debuff duration",
+            "created_at": "[2025-03-30 18:33:44]",
+            "date_of_end": "[2025-04-01 06:33:44]",
+            "top_3_bids": [
+                {
+                    "user_id": 576508116871675954,
+                    "amount": 200
+                }
+            ]
+        },
+        "Naru_23": {
+            "id": 23,
+            "name": "Naru",
+            "item": "Sacred Repose Garb",
+            "description": "Max Health",
+            "created_at": "[2025-03-30 18:34:24]",
+            "date_of_end": "[2025-04-01 06:34:24]",
+            "top_3_bids": [
+                {
+                    "user_id": 1307770612122517575,
+                    "amount": 20000
+                }
+            ]
+        },
+        "Naru_24": {
+            "id": 24,
+            "name": "Naru",
+            "item": "Runed Band of the Black Anvil",
+            "description": "Buff Duration",
+            "created_at": "[2025-03-30 18:34:59]",
+            "date_of_end": "[2025-04-01 06:34:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 80000
+                }
+            ]
+        },
+        "Leviathan_25": {
+            "id": 25,
+            "name": "Leviathan",
+            "item": "Spectral Overseers Handguards",
+            "description": "Hit Chance",
+            "created_at": "[2025-03-30 18:35:40]",
+            "date_of_end": "[2025-04-01 06:35:40]",
+            "top_3_bids": [
+                {
+                    "user_id": 264034161587650560,
+                    "amount": 64349
+                }
+            ]
+        },
+        "Daigon_26": {
+            "id": 26,
+            "name": "Daigon",
+            "item": "Eldritch Whisper",
+            "description": "Max health",
+            "created_at": "[2025-03-30 18:36:08]",
+            "date_of_end": "[2025-04-01 06:36:08]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_27": {
+            "id": 27,
+            "name": "Daigon",
+            "item": "Band of the Silent One",
+            "description": "Silence chance",
+            "created_at": "[2025-03-30 18:36:35]",
+            "date_of_end": "[2025-04-01 06:36:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
                 }
             ]
         }
