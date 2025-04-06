@@ -125,7 +125,7 @@ async def list_role(interaction: discord.Interaction, role: discord.Role):
     await interaction.response.send_message(embed=embed)
             
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def add_members(ctx):
     """Adds all members of the server to the DKP database if they are not already present."""
     guild = ctx.guild
@@ -148,7 +148,7 @@ async def add_members(ctx):
     await ctx.send(f"✅ Added {added_members} new members to the DKP database.")
 
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def updm_names(ctx):
     """Updates the display names in the DKP database without erasing existing data."""
     dkp_data = await load_dkp_data()
@@ -432,7 +432,7 @@ async def log_auction_result(auction_id, top_3_bids):
 
 # Функция для старта аукциона с уникальным именем
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def sauc(ctx, auction_name: str, item: str, description: str, duration: int):
     """Starts an auction for a specific item with the specified duration and description."""
     global auctions
@@ -584,7 +584,7 @@ async def endauction(ctx, auction_id: int):
 
 # Функция для принудительной остановки аукциона с уникальным именем
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def fendauc(ctx, auction_id: int):
     """Ends the auction, announces the winner, the runner-up, and deducts DKP."""
     """Ends the auction, announces the winner, the runner-up, and deducts DKP."""
@@ -776,7 +776,7 @@ async def sub_dkp(users, amount):
 
 # Command to add DKP points
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def adddkp(ctx, amount: int, description: str, *users: discord.Member):
     """Adds DKP points to a user."""
     await add_dkp(users, amount)  # Asynchronous call
@@ -788,7 +788,7 @@ async def adddkp(ctx, amount: int, description: str, *users: discord.Member):
 
 # Command to subtract DKP points
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def subdkp(ctx, amount: int, description: str, *users: discord.Member):
     """Removes DKP points from a user."""
     await sub_dkp(users, amount)  # Asynchronous call
@@ -877,7 +877,7 @@ async def alldkp(interaction: discord.Interaction):
 
 #Delete user from Data
 @bot.command()
-@commands.has_any_role('Admin', 'Moderator', 'Leader')
+@commands.has_any_role('Leader')
 async def duser(ctx, user: discord.Member):
     """Removes a user from the DKP database.."""
     dkp_data = await load_dkp_data()

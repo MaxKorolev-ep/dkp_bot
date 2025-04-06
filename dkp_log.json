@@ -1,11 +1,177 @@
 {
-    "338644317226926082": {
-        "display_name": "Brutrak21",
+    "1069012177723342888": {
+        "display_name": "freiDish",
         "logs": [
             {
-                "timestamp": "[2025-03-20 09:22:15]",
+                "timestamp": "[2025-03-27 17:34:19]",
                 "action": "Added",
-                "amount": 5785,
+                "amount": 500,
+                "description": "event"
+            },
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:14:46]",
+                "action": "Added",
+                "amount": 12585,
+                "description": "rep"
+            }
+        ]
+    },
+    "896596944804257823": {
+        "display_name": "ItsBBC",
+        "logs": [
+            {
+                "timestamp": "[2025-03-27 17:37:24]",
+                "action": "Added",
+                "amount": 6929,
+                "description": "(1244 + 3120 + 2565)rep"
+            }
+        ]
+    },
+    "316168392275001358": {
+        "display_name": "Bazookahands",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:35:00]",
+                "action": "Remove",
+                "amount": 80000,
+                "description": "winner of auction ID 24"
+            },
+            {
+                "timestamp": "[2025-04-03 13:14:36]",
+                "action": "Added",
+                "amount": 12665,
+                "description": "rep"
+            }
+        ]
+    },
+    "306541907608076293": {
+        "display_name": "Blockwart",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:19:29]",
+                "action": "Added",
+                "amount": 5135,
+                "description": "rep"
+            }
+        ]
+    },
+    "359049403362836490": {
+        "display_name": "Torray",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:19:07]",
+                "action": "Added",
+                "amount": 5677,
+                "description": "rep"
+            }
+        ]
+    },
+    "576508116871675954": {
+        "display_name": "Retka28",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:33:44]",
+                "action": "Remove",
+                "amount": 200,
+                "description": "winner of auction ID 22"
+            },
+            {
+                "timestamp": "[2025-04-03 13:14:54]",
+                "action": "Added",
+                "amount": 12451,
+                "description": "rep"
+            }
+        ]
+    },
+    "264034161587650560": {
+        "display_name": "赤毛の女の子 (Korean)",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:35:40]",
+                "action": "Remove",
+                "amount": 64349,
+                "description": "winner of auction ID 25"
+            },
+            {
+                "timestamp": "[2025-04-03 13:04:25]",
+                "action": "Added",
+                "amount": 10313,
+                "description": "rep"
+            }
+        ]
+    },
+    "267245810209652737": {
+        "display_name": "trib00n",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:15:02]",
+                "action": "Added",
+                "amount": 12194,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-03 13:20:08]",
+                "action": "Added",
+                "amount": 500,
+                "description": "event"
+            }
+        ]
+    },
+    "446401545643229185": {
+        "display_name": "Watfac",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:13:31]",
+                "action": "Added",
+                "amount": 23072,
                 "description": "rep"
             }
         ]
@@ -14,20 +180,535 @@
         "display_name": "Modika",
         "logs": [
             {
-                "timestamp": "[2025-03-20 09:23:14]",
+                "timestamp": "[2025-03-30 18:29:59]",
                 "action": "Added",
-                "amount": 33,
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:13:20]",
+                "action": "Added",
+                "amount": 53250,
                 "description": "rep"
             }
         ]
     },
-    "185229373400547328": {
-        "display_name": "zombiehorror37",
+    "790876999995490304": {
+        "display_name": "Telissi",
         "logs": [
             {
-                "timestamp": "[2025-03-20 09:23:34]",
+                "timestamp": "[2025-03-30 18:29:59]",
                 "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:04:18]",
+                "action": "Added",
+                "amount": 10834,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-03 13:20:08]",
+                "action": "Added",
+                "amount": 500,
+                "description": "event"
+            }
+        ]
+    },
+    "205976132778983425": {
+        "display_name": "jjlevii",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:29:59]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:12:12]",
+                "action": "Added",
+                "amount": 9137,
+                "description": "rep"
+            }
+        ]
+    },
+    "241966397419290624": {
+        "display_name": "Dr.Criminal",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:11:53]",
+                "action": "Added",
+                "amount": 9581,
+                "description": "rep"
+            }
+        ]
+    },
+    "809683968404095027": {
+        "display_name": "Jeezrel",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:36:09]",
+                "action": "Remove",
                 "amount": 100,
+                "description": "winner of auction ID 26"
+            },
+            {
+                "timestamp": "[2025-04-01 06:36:36]",
+                "action": "Remove",
+                "amount": 100,
+                "description": "winner of auction ID 27"
+            },
+            {
+                "timestamp": "[2025-04-03 13:11:39]",
+                "action": "Added",
+                "amount": 9799,
+                "description": "rep"
+            }
+        ]
+    },
+    "714487961609044020": {
+        "display_name": "böserbub89/Sascha",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:15:20]",
+                "action": "Added",
+                "amount": 11388,
+                "description": "rep"
+            }
+        ]
+    },
+    "1311707950322286605": {
+        "display_name": "SenseiNobunaga",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:12:03]",
+                "action": "Added",
+                "amount": 9329,
+                "description": "rep"
+            }
+        ]
+    },
+    "236670020787240963": {
+        "display_name": "DramaticToast",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:12:29]",
+                "action": "Added",
+                "amount": 8355,
+                "description": "rep"
+            }
+        ]
+    },
+    "216609984794853378": {
+        "display_name": "HaroowHold",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:18:24]",
+                "action": "Added",
+                "amount": 8040,
+                "description": "rep"
+            }
+        ]
+    },
+    "285516973234847746": {
+        "display_name": "Sokadesu",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:14:01]",
+                "action": "Added",
+                "amount": 15766,
+                "description": "rep"
+            }
+        ]
+    },
+    "338644317226926082": {
+        "display_name": "Brutrak21",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:04:38]",
+                "action": "Added",
+                "amount": 9991,
+                "description": "rep"
+            }
+        ]
+    },
+    "212616548593041408": {
+        "display_name": "Devolia",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:18:35]",
+                "action": "Added",
+                "amount": 6494,
+                "description": "rep"
+            }
+        ]
+    },
+    "1181633955531870269": {
+        "display_name": "Randy187",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:15:51]",
+                "action": "Added",
+                "amount": 4526,
+                "description": "rep"
+            }
+        ]
+    },
+    "1233687696359034899": {
+        "display_name": "Godpunci",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:06]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:15:12]",
+                "action": "Added",
+                "amount": 11694,
+                "description": "rep"
+            }
+        ]
+    },
+    "977314289415249962": {
+        "display_name": "KCtaGueul",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:19:15]",
+                "action": "Added",
+                "amount": 5575,
+                "description": "rep"
+            }
+        ]
+    },
+    "154336390975324160": {
+        "display_name": "Ebalon",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:10:52]",
+                "action": "Added",
+                "amount": 36722,
+                "description": "(9908 + 1387 + 3600 + 1517 + 301)rep (10000 + 10000)boss"
+            }
+        ]
+    },
+    "337537020710617099": {
+        "display_name": "Fiaresu",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:12:40]",
+                "action": "Added",
+                "amount": 8125,
+                "description": "rep"
+            }
+        ]
+    },
+    "330481661190078464": {
+        "display_name": "Bossi",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:18:44]",
+                "action": "Added",
+                "amount": 6183,
+                "description": "rep"
+            }
+        ]
+    },
+    "1307770612122517575": {
+        "display_name": "Achnel/Ximbomba",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:34:26]",
+                "action": "Remove",
+                "amount": 20000,
+                "description": "winner of auction ID 23"
+            },
+            {
+                "timestamp": "[2025-04-03 13:14:16]",
+                "action": "Added",
+                "amount": 14431,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-03 13:20:08]",
+                "action": "Added",
+                "amount": 500,
+                "description": "event"
+            }
+        ]
+    },
+    "228722534487425034": {
+        "display_name": "Mackeu",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-01 06:32:49]",
+                "action": "Remove",
+                "amount": 1000,
+                "description": "winner of auction ID 21"
+            },
+            {
+                "timestamp": "[2025-04-03 13:15:31]",
+                "action": "Added",
+                "amount": 4674,
+                "description": "rep"
+            }
+        ]
+    },
+    "1202230987820376125": {
+        "display_name": "xShadowMonarch",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:19:41]",
+                "action": "Added",
+                "amount": 4698,
+                "description": "rep"
+            }
+        ]
+    },
+    "185368210378326016": {
+        "display_name": "Linilu",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:19:22]",
+                "action": "Added",
+                "amount": 5230,
+                "description": "rep"
+            }
+        ]
+    },
+    "315855745478557696": {
+        "display_name": "TensaiShield",
+        "logs": [
+            {
+                "timestamp": "[2025-03-30 18:31:52]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-03 13:17:49]",
+                "action": "Added",
+                "amount": 1408,
+                "description": "rep"
+            }
+        ]
+    },
+    "686229371224326145": {
+        "display_name": "Indingo",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:14:27]",
+                "action": "Added",
+                "amount": 13977,
+                "description": "rep"
+            }
+        ]
+    },
+    "351155870500913156": {
+        "display_name": "Twinki",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:15:40]",
+                "action": "Added",
+                "amount": 4626,
+                "description": "rep"
+            }
+        ]
+    },
+    "982948079680503810": {
+        "display_name": "DaggerClaw",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:16:51]",
+                "action": "Added",
+                "amount": 3955,
+                "description": "rep"
+            }
+        ]
+    },
+    "274316343010918400": {
+        "display_name": "MsBeanie",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:17:00]",
+                "action": "Added",
+                "amount": 3082,
+                "description": "rep"
+            }
+        ]
+    },
+    "736012769052196884": {
+        "display_name": "zXToshiroXz",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:17:10]",
+                "action": "Added",
+                "amount": 2733,
+                "description": "rep"
+            }
+        ]
+    },
+    "330952656925360129": {
+        "display_name": "Mouudi",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:17:31]",
+                "action": "Added",
+                "amount": 2283,
+                "description": "rep"
+            }
+        ]
+    },
+    "145122063173156864": {
+        "display_name": "Reminissions",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:17:40]",
+                "action": "Added",
+                "amount": 1890,
+                "description": "rep"
+            }
+        ]
+    },
+    "1331006807409168477": {
+        "display_name": "NycI",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:18:00]",
+                "action": "Added",
+                "amount": 918,
+                "description": "rep"
+            }
+        ]
+    },
+    "435472466144395274": {
+        "display_name": "Omedoxix",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:18:09]",
+                "action": "Added",
+                "amount": 300,
+                "description": "rep"
+            }
+        ]
+    },
+    "609906277765611522": {
+        "display_name": "Senaaaa",
+        "logs": [
+            {
+                "timestamp": "[2025-04-03 13:18:54]",
+                "action": "Added",
+                "amount": 5991,
                 "description": "rep"
             }
         ]
