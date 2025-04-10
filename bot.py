@@ -679,19 +679,38 @@ async def fendauc(ctx, auction_id: int):
 # Функция для просмотра всех активных аукционов
 @bot.tree.command(name="aucs", description="Shows all list of active auctions")
 async def aucs(interaction: discord.Interaction):
-    """Shows all active auctions."""
+    """Shows all active auctions, including the current highest bid and bidder."""
     global auctions
 
     if not auctions:
         await interaction.response.send_message("There are no active auctions at the moment.", ephemeral=True)
         return
 
-    active_auctions_message = "Active Auctions:\n"
-    for auction_name, auction in auctions.items():
+    active_auctions_message = "**🎯 Active Auctions:**\n"
+    for auction_id, auction in auctions.items():
         remaining_time = auction["end_time"] - time.time()
-        active_auctions_message += f"**Auction ID: {auction_name}** - {auction['item']} (Time left: {format_seconds(remaining_time)})\n"
+        highest_bid = auction.get("highest_bid", 0)
+        highest_bidder_id = auction.get("highest_bidder")
+
+        # Получаем имя пользователя, если есть
+        if highest_bidder_id:
+            try:
+                highest_bidder = await bot.fetch_user(highest_bidder_id)
+                member = interaction.guild.get_member(highest_bidder_id)
+                bidder_name = member.display_name if member else "Unknown"
+            except:
+                bidder_name = "Unknown"
+            bid_info = f" | 💰 Highest Bid: **{highest_bid} DKP** by **{bidder_name}**"
+        else:
+            bid_info = " | 💰 No bids yet"
+
+        active_auctions_message += (
+            f"**ID: {auction_id}** - {auction['item']} "
+            f"(⏳ Time left: {format_seconds(remaining_time)}){bid_info}\n"
+        )
 
     await interaction.response.send_message(active_auctions_message, ephemeral=True)
+
 
 async def log_dkp_change(user, amount, action, description=""):
     """Логирование изменений DKP в файл dkp_log.json с добавлением описания."""

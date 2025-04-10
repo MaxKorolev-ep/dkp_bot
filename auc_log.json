@@ -1,5 +1,5 @@
 {
-    "last_id": 27,
+    "last_id": 39,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -424,6 +424,169 @@
                 {
                     "user_id": 809683968404095027,
                     "amount": 100
+                }
+            ]
+        },
+        "Daigon_28": {
+            "id": 28,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Magic evasion",
+            "created_at": "[2025-04-06 17:37:30]",
+            "date_of_end": "[2025-04-08 05:37:30]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_29": {
+            "id": 29,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Range",
+            "created_at": "[2025-04-06 17:37:59]",
+            "date_of_end": "[2025-04-08 05:37:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 2100
+                }
+            ]
+        },
+        "Daigon_30": {
+            "id": 30,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Magic evasion",
+            "created_at": "[2025-04-06 17:38:31]",
+            "date_of_end": "[2025-04-08 05:38:31]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 1400
+                }
+            ]
+        },
+        "Naru_31": {
+            "id": 31,
+            "name": "Naru",
+            "item": "Imperial Seekers Tunic",
+            "description": "Ranged endurance",
+            "created_at": "[2025-04-06 17:39:09]",
+            "date_of_end": "[2025-04-08 05:39:09]",
+            "top_3_bids": [
+                {
+                    "user_id": 455180516908466181,
+                    "amount": 87101
+                }
+            ]
+        },
+        "Naru_32": {
+            "id": 32,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "Skill Damage Boost",
+            "created_at": "[2025-04-06 17:39:38]",
+            "date_of_end": "[2025-04-08 05:39:38]",
+            "top_3_bids": []
+        },
+        "Naru_33": {
+            "id": 33,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "Skill Damage Boost",
+            "created_at": "[2025-04-06 17:39:42]",
+            "date_of_end": "[2025-04-08 05:39:42]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 7100
+                }
+            ]
+        },
+        "Naru_34": {
+            "id": 34,
+            "name": "Naru",
+            "item": "Narus Frenzied Greatblade",
+            "description": "Hit Chance",
+            "created_at": "[2025-04-06 17:39:59]",
+            "date_of_end": "[2025-04-08 05:39:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 95000
+                }
+            ]
+        },
+        "Daigon_35": {
+            "id": 35,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Magic evasion",
+            "created_at": "[2025-04-06 17:40:11]",
+            "date_of_end": "[2025-04-08 05:40:11]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 100
+                }
+            ]
+        },
+        "Levi_36": {
+            "id": 36,
+            "name": "Levi",
+            "item": "Sacred Repose Gloves",
+            "description": "Max Health",
+            "created_at": "[2025-04-06 17:40:55]",
+            "date_of_end": "[2025-04-08 05:40:55]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 51000
+                }
+            ]
+        },
+        "Levi_37": {
+            "id": 37,
+            "name": "Levi",
+            "item": "First Light Halo",
+            "description": "Cooldown speed",
+            "created_at": "[2025-04-06 17:41:43]",
+            "date_of_end": "[2025-04-08 05:41:43]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 2100
+                }
+            ]
+        },
+        "Daigon_38": {
+            "id": 38,
+            "name": "Daigon",
+            "item": "Imperial Seekers Trousers",
+            "description": "Ranged endurance",
+            "created_at": "[2025-04-06 17:42:09]",
+            "date_of_end": "[2025-04-08 05:42:09]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 20100
+                }
+            ]
+        },
+        "Daigon_39": {
+            "id": 39,
+            "name": "Daigon",
+            "item": "Deep Draconic Gorget",
+            "description": "Mana regen",
+            "created_at": "[2025-04-06 17:42:29]",
+            "date_of_end": "[2025-04-08 05:42:29]",
+            "top_3_bids": [
+                {
+                    "user_id": 241966397419290624,
+                    "amount": 60000
                 }
             ]
         }
