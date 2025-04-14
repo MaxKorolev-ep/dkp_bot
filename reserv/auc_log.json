@@ -1,5 +1,5 @@
 {
-    "last_id": 39,
+    "last_id": 51,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -587,6 +587,174 @@
                 {
                     "user_id": 241966397419290624,
                     "amount": 60000
+                }
+            ]
+        },
+        "Daigon_40": {
+            "id": 40,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Melee evasion",
+            "created_at": "[2025-04-13 17:44:37]",
+            "date_of_end": "[2025-04-14 17:44:37]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 100
+                }
+            ]
+        },
+        "Daigon_41": {
+            "id": 41,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Magic endurance",
+            "created_at": "[2025-04-13 17:44:52]",
+            "date_of_end": "[2025-04-14 17:44:52]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 200
+                }
+            ]
+        },
+        "Daigon_42": {
+            "id": 42,
+            "name": "Daigon",
+            "item": "Imperial seeker trousers",
+            "description": "Mana regen",
+            "created_at": "[2025-04-13 17:45:34]",
+            "date_of_end": "[2025-04-14 17:45:34]",
+            "top_3_bids": [
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 20100
+                }
+            ]
+        },
+        "Daigon_43": {
+            "id": 43,
+            "name": "Daigon",
+            "item": "Royal Praetors Gaiters",
+            "description": "Ranged Evasion",
+            "created_at": "[2025-04-13 17:46:09]",
+            "date_of_end": "[2025-04-14 17:46:09]",
+            "top_3_bids": [
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 4500
+                }
+            ]
+        },
+        "Daigon_44": {
+            "id": 44,
+            "name": "Daigon",
+            "item": "Sacred Repose Pants",
+            "description": "Buff duration",
+            "created_at": "[2025-04-13 17:46:38]",
+            "date_of_end": "[2025-04-14 17:46:38]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 300
+                }
+            ]
+        },
+        "Naru_45": {
+            "id": 45,
+            "name": "Naru",
+            "item": "Runed Band of the Black Anvil",
+            "description": "Collision chance",
+            "created_at": "[2025-04-13 17:47:33]",
+            "date_of_end": "[2025-04-14 17:47:33]",
+            "top_3_bids": [
+                {
+                    "user_id": 446401545643229185,
+                    "amount": 161300
+                }
+            ]
+        },
+        "Naru_46": {
+            "id": 46,
+            "name": "Naru",
+            "item": "Naru spear",
+            "description": "Critical hit chance",
+            "created_at": "[2025-04-13 17:47:58]",
+            "date_of_end": "[2025-04-14 17:47:58]",
+            "top_3_bids": [
+                {
+                    "user_id": 216609984794853378,
+                    "amount": 21000
+                }
+            ]
+        },
+        "Naru_47": {
+            "id": 47,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "Melee endurance",
+            "created_at": "[2025-04-13 17:48:59]",
+            "date_of_end": "[2025-04-14 17:48:59]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 100
+                }
+            ]
+        },
+        "Levi_48": {
+            "id": 48,
+            "name": "Levi",
+            "item": "First Light Halo",
+            "description": "Cooldown speed",
+            "created_at": "[2025-04-13 17:49:22]",
+            "date_of_end": "[2025-04-14 17:49:22]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 1200
+                }
+            ]
+        },
+        "Levi_49": {
+            "id": 49,
+            "name": "Levi",
+            "item": "Bracelet of the Violent Undertow",
+            "description": "Collision ressistance",
+            "created_at": "[2025-04-13 17:50:01]",
+            "date_of_end": "[2025-04-14 17:50:01]",
+            "top_3_bids": [
+                {
+                    "user_id": 1069012177723342888,
+                    "amount": 76900
+                }
+            ]
+        },
+        "Manticus_50": {
+            "id": 50,
+            "name": "Manticus",
+            "item": "First Lights Pants",
+            "description": "Ranged Endurance",
+            "created_at": "[2025-04-13 17:50:30]",
+            "date_of_end": "[2025-04-14 17:50:30]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Manticus_51": {
+            "id": 51,
+            "name": "Manticus",
+            "item": "Slayers Quicksilver Pendant",
+            "description": "Max Health",
+            "created_at": "[2025-04-13 17:51:01]",
+            "date_of_end": "[2025-04-14 17:51:01]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 300
                 }
             ]
         }
