@@ -155,6 +155,12 @@
                 "action": "Remove",
                 "amount": 300,
                 "description": "winner of auction ID 51"
+            },
+            {
+                "timestamp": "[2025-04-16 17:26:18]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event"
             }
         ]
     },
@@ -448,6 +454,12 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "tax"
+            },
+            {
+                "timestamp": "[2025-04-16 17:26:18]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event"
             }
         ]
     },
@@ -518,6 +530,12 @@
                 "action": "Added",
                 "amount": 8824,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-15 07:53:07]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -660,6 +678,12 @@
                 "action": "Remove",
                 "amount": 1500,
                 "description": "winner of auction ID 50"
+            },
+            {
+                "timestamp": "[2025-04-16 17:26:18]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event"
             }
         ]
     },
@@ -795,6 +819,12 @@
                 "action": "Added",
                 "amount": 4954,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-15 05:57:12]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1053,6 +1083,12 @@
                 "action": "Remove",
                 "amount": 1200,
                 "description": "winner of auction ID 48"
+            },
+            {
+                "timestamp": "[2025-04-16 17:26:18]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event"
             }
         ]
     },
@@ -1152,6 +1188,12 @@
                 "action": "Added",
                 "amount": 5021,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-15 07:31:22]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1391,6 +1433,12 @@
                 "action": "Added",
                 "amount": 10000,
                 "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-16 17:26:18]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event"
             }
         ]
     },
