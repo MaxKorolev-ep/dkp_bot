@@ -10,7 +10,9 @@ import time
 import datetime
 import aiofiles
 from github import Github
-from discord import app_commands
+from discord.ext import commands, tasks
+from discord import app_commands, ui, Interaction, Embed
+from datetime import datetime, timedelta
 
 load_dotenv()
 GUILD_ID = os.getenv("GUILD_ID")  # Загружаем как строку
