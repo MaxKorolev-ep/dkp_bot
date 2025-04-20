@@ -875,6 +875,12 @@ async def topdkp(interaction: discord.Interaction):
 @bot.tree.command(name="alldkp", description="Shows all users") 
 async def alldkp(interaction: discord.Interaction):
     """Displays a list of all users and their DKP points."""
+    user = interaction.user
+        # Проверяем, является ли пользователь администратором
+    if not any(role.permissions.administrator for role in user.roles):
+        await interaction.response.send_message("❌ You don't have permission to use this command.", ephemeral=True)
+        return
+    
     await interaction.response.defer()  # ✅ Сообщаем Discord, что команда обрабатывается
 
     dkp_data = await load_dkp_data()
