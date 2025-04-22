@@ -12,7 +12,6 @@ import aiofiles
 from github import Github
 from discord.ext import commands, tasks
 from discord import app_commands, ui, Interaction, Embed
-from datetime import datetime, timedelta
 
 load_dotenv()
 GUILD_ID = os.getenv("GUILD_ID")  # Загружаем как строку
@@ -44,9 +43,6 @@ last_bid_times = {}
 last_dbid_times = {}
 # Список доступных ролей
 AVAILABLE_ROLES = ["Tank", "DD", "Healer"]
-# Хранилище голосов
-event_votes = {}  # message_id: {user_id: choice}
-event_reminders = []  # список событий: (channel_id, message_id, event_time, title)
 
 async def load_dkp_data():
     async with dkp_lock:
@@ -592,7 +588,6 @@ async def endauction(ctx, auction_id: int):
 @commands.has_any_role('Leader')
 async def fendauc(ctx, auction_id: int):
     """Ends the auction, announces the winner, the runner-up, and deducts DKP."""
-    """Ends the auction, announces the winner, the runner-up, and deducts DKP."""
     global auctions
 
     # Проверяем, существует ли аукцион с таким ID
@@ -943,7 +938,6 @@ async def ahelp(ctx):
 
 #Open users log
 @bot.command()
-@commands.cooldown(1, 30, commands.BucketType.user)
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
 async def log(ctx, user: discord.Member):
     """Shows the DKP log history for a user."""
@@ -987,7 +981,6 @@ async def log_error(ctx, error):
 
 #Open aucs log
 @bot.command()
-@commands.cooldown(1, 30, commands.BucketType.user)
 @commands.has_any_role('Admin', 'Moderator', 'Leader')
 async def alog(ctx, auction_id: int):
     """Shows the auction log history for a given auction ID."""
@@ -1144,96 +1137,10 @@ async def dload_loc(ctx, github_token: str, repo_name: str, files=None, local_fo
             await ctx.send(f"Error downloading {file_name} from 'reserv' to the local folder: {e}")
 
 
-class EventView(ui.View):
-    def __init__(self, message_id):
-        super().__init__(timeout=None)
-        self.message_id = message_id
-
-    @ui.button(label="Attending", style=discord.ButtonStyle.success, emoji="✅")
-    async def attending(self, interaction: Interaction, button: ui.Button):
-        await self.vote(interaction, "✅ Attending")
-
-    @ui.button(label="Not Attending", style=discord.ButtonStyle.danger, emoji="❌")
-    async def not_attending(self, interaction: Interaction, button: ui.Button):
-        await self.vote(interaction, "❌ Not Attending")
-
-    @ui.button(label="Not Sure", style=discord.ButtonStyle.secondary, emoji="🤔")
-    async def unsure(self, interaction: Interaction, button: ui.Button):
-        await self.vote(interaction, "🤔 Not Sure")
-
-    async def vote(self, interaction: Interaction, choice: str):
-        user_id = interaction.user.id
-        votes = event_votes.setdefault(self.message_id, {})
-        votes[user_id] = choice
-
-        counts = {
-            "✅ Attending": list(votes.values()).count("✅ Attending"),
-            "❌ Not Attending": list(votes.values()).count("❌ Not Attending"),
-            "🤔 Not Sure": list(votes.values()).count("🤔 Not Sure"),
-        }
-
-        embed = Embed(
-            title="📅 Event RSVP",
-            description=(
-                f"✅ Attending: **{counts['✅ Attending']}**\n"
-                f"❌ Not Attending: **{counts['❌ Not Attending']}**\n"
-                f"🤔 Not Sure: **{counts['🤔 Not Sure']}**"
-            ),
-            color=discord.Color.blurple()
-        )
-        await interaction.response.edit_message(embed=embed, view=self)
-
-@bot.tree.command(name="event", description="Creates an event with RSVP buttons and reminder")
-@app_commands.describe(
-    title="The title of the event",
-    datetime_str="Start time in format YYYY-MM-DD HH:MM (24h format, UTC)"
-)
-async def event(interaction: discord.Interaction, title: str, datetime_str: str):
-    try:
-        event_time = datetime.strptime(datetime_str, "%Y-%m-%d %H:%M")
-    except ValueError:
-        await interaction.response.send_message("⚠️ Invalid datetime format. Use `YYYY-MM-DD HH:MM` (24h, UTC).", ephemeral=True)
-        return
-
-    embed = Embed(
-        title=f"📢 {title}",
-        description=(
-            f"Choose your RSVP status below.\n"
-            f"🕒 Event starts at **{event_time.strftime('%Y-%m-%d %H:%M')} UTC**"
-        ),
-        color=discord.Color.gold()
-    )
-
-    message = await interaction.channel.send(embed=embed, view=EventView(message_id=0))
-    view = EventView(message.id)
-    await message.edit(view=view)
-    event_votes[message.id] = {}
-
-    # Добавляем событие в список для напоминания
-    event_reminders.append((interaction.channel.id, message.id, event_time, title))
-
-    await interaction.response.send_message("✅ Event has been created with a 1-hour reminder!", ephemeral=True)
-
-
-@tasks.loop(minutes=1)
-async def check_event_reminders():
-    now = datetime.utcnow()
-    to_notify = [e for e in event_reminders if timedelta(hours=0) <= (e[2] - now) <= timedelta(hours=1)]
-
-    for channel_id, message_id, event_time, title in to_notify:
-        channel = bot.get_channel(channel_id)
-        if channel:
-            await channel.send(f"⏰ Reminder: **{title}** starts in **1 hour** at **{event_time.strftime('%H:%M')} UTC**!")
-
-    # Удаляем прошедшие события
-    event_reminders[:] = [e for e in event_reminders if e[2] > now]
-
-
 
 @bot.event
 async def on_ready():
     synced = await bot.tree.sync()
-    check_event_reminders.start()
     print(f"Logged in as {bot.user}")
     print(f"Synced {len(synced)} commands: {[cmd.name for cmd in synced]}")
 
