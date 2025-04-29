@@ -1,5 +1,5 @@
 {
-    "last_id": 51,
+    "last_id": 67,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -755,6 +755,224 @@
                 {
                     "user_id": 316168392275001358,
                     "amount": 300
+                }
+            ]
+        },
+        "TEST_52": {
+            "id": 52,
+            "name": "TEST",
+            "item": "Final test",
+            "description": "Web",
+            "created_at": "[2025-04-22 17:26:42]",
+            "date_of_end": "[2025-04-22 17:27:32]",
+            "top_3_bids": []
+        },
+        "TEST_53": {
+            "id": 53,
+            "name": "TEST",
+            "item": "Final test",
+            "description": "Web",
+            "created_at": "[2025-04-22 17:26:43]",
+            "date_of_end": "[2025-04-22 17:27:33]",
+            "top_3_bids": []
+        },
+        "Naru_54": {
+            "id": 54,
+            "name": "Naru",
+            "item": "Runed Band of the Black Anvil",
+            "description": "buff duration",
+            "created_at": "[2025-04-27 17:33:33]",
+            "date_of_end": "[2025-04-28 17:33:33]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 126000
+                },
+                {
+                    "user_id": 257578294369583105,
+                    "amount": 42790
+                }
+            ]
+        },
+        "Naru_55": {
+            "id": 55,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "debuff duration",
+            "created_at": "[2025-04-27 17:34:28]",
+            "date_of_end": "[2025-04-28 17:34:28]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 1000
+                }
+            ]
+        },
+        "Naru_56": {
+            "id": 56,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Melee endurance",
+            "created_at": "[2025-04-27 17:34:51]",
+            "date_of_end": "[2025-04-28 17:34:51]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 1400
+                }
+            ]
+        },
+        "Naru_57": {
+            "id": 57,
+            "name": "Naru",
+            "item": "Sacred repose Garb",
+            "description": "Magic endurance",
+            "created_at": "[2025-04-27 17:35:12]",
+            "date_of_end": "[2025-04-28 17:35:12]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Naru_58": {
+            "id": 58,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Maz health",
+            "created_at": "[2025-04-27 17:35:24]",
+            "date_of_end": "[2025-04-28 17:35:24]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 10000
+                }
+            ]
+        },
+        "Naru_59": {
+            "id": 59,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "debuff duration",
+            "created_at": "[2025-04-27 17:35:33]",
+            "date_of_end": "[2025-04-28 17:35:33]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 1000
+                }
+            ]
+        },
+        "Daigon_60": {
+            "id": 60,
+            "name": "Daigon",
+            "item": "Immortal legionare Helm",
+            "description": "Cooldown speed",
+            "created_at": "[2025-04-27 17:36:33]",
+            "date_of_end": "[2025-04-28 17:36:33]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2100
+                }
+            ]
+        },
+        "Daigon_61": {
+            "id": 61,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Max health",
+            "created_at": "[2025-04-27 17:36:56]",
+            "date_of_end": "[2025-04-28 17:36:56]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 1700
+                }
+            ]
+        },
+        "Manticus_62": {
+            "id": 62,
+            "name": "Manticus",
+            "item": "First Halo PAnts",
+            "description": "debuff duration",
+            "created_at": "[2025-04-27 17:37:21]",
+            "date_of_end": "[2025-04-28 17:37:21]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Manticus_63": {
+            "id": 63,
+            "name": "Manticus",
+            "item": "Pristine Primalfang Pants",
+            "description": "debuff duration",
+            "created_at": "[2025-04-27 17:37:47]",
+            "date_of_end": "[2025-04-28 17:37:47]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Daigon_64": {
+            "id": 64,
+            "name": "Daigon",
+            "item": "DAIGON IMBA STAFF",
+            "description": "Critical hit chance",
+            "created_at": "[2025-04-27 17:38:21]",
+            "date_of_end": "[2025-04-28 17:38:21]",
+            "top_3_bids": [
+                {
+                    "user_id": 1069012177723342888,
+                    "amount": 180000
+                }
+            ]
+        },
+        "Daigon_65": {
+            "id": 65,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Melee evasion",
+            "created_at": "[2025-04-27 17:38:51]",
+            "date_of_end": "[2025-04-28 17:38:51]",
+            "top_3_bids": [
+                {
+                    "user_id": 809683968404095027,
+                    "amount": 100
+                }
+            ]
+        },
+        "Naru_66": {
+            "id": 66,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "buff duration",
+            "created_at": "[2025-04-27 17:39:17]",
+            "date_of_end": "[2025-04-28 17:39:17]",
+            "top_3_bids": [
+                {
+                    "user_id": 686229371224326145,
+                    "amount": 43000
+                }
+            ]
+        },
+        "Naru_67": {
+            "id": 67,
+            "name": "Naru",
+            "item": "NARU IMBA GREATSWORD",
+            "description": "Max Health",
+            "created_at": "[2025-04-27 17:39:35]",
+            "date_of_end": "[2025-04-28 17:39:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 236670020787240963,
+                    "amount": 80000
                 }
             ]
         }

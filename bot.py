@@ -297,6 +297,11 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
     auction["highest_bid"] = amount
     auction["highest_bidder"] = user.id
     auction["bids"].append({"user": user.id, "amount": amount})
+    
+    time_left = auction["end_time"] - current_time
+    if time_left < 300:  # 300 секунд = 5 минут
+      auction["end_time"] = current_time + 300
+      await channel.send(f"⏱️ Time extended! New end time for auction {auction_id} is in 5 minutes due to recent bid.")
 
     # **Обновляем таймер для пользователя**
     if auction_id not in last_bid_times:
@@ -376,7 +381,6 @@ async def dbid(interaction: discord.Interaction, auction_id: str, member: discor
         f"✅ {member.display_name}'s bid has been removed from auction ID '{auction_id}', and their DKP has been refunded.",
         ephemeral=True
     )
-
         
 async def log_auction_creation(auction_id, auction_name, item, description, end_time):
     """Записывает в лог информацию о новом аукционе."""
@@ -488,9 +492,20 @@ async def sauc(ctx, auction_name: str, item: str, description: str, duration: in
         auction_messages[auction_id] = auction_message.id
     else:
         await ctx.send("Error: Channel '#auctions1' not found.")
-    # Запускаем таймер завершения аукциона
-    await asyncio.sleep(duration)
-    await endauction(ctx, auction_id)
+        return  # ❗ Важно: остановить если нет канала
+
+    # 🛡 Только после ВСЕХ записей запускаем фонового следящего
+    async def auction_watcher():
+        while True:
+            await asyncio.sleep(5)  # сначала спим, чтобы не дергать каждый тик
+            now = time.time()
+            if auction_id not in auctions:
+                break  # если аукцион удалили вручную
+            if now >= auctions[auction_id]["end_time"]:
+                await endauction(ctx, auction_id)
+                break
+
+    bot.loop.create_task(auction_watcher())
 
 # Функция для окончания аукциона с уникальным именем
 async def endauction(ctx, auction_id: int):

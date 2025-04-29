@@ -85,6 +85,78 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:02]",
+                "action": "Added",
+                "amount": 45469,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:28:22]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 17:38:22]",
+                "action": "Remove",
+                "amount": 180000,
+                "description": "winner of auction ID 64"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -215,6 +287,78 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:41]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:41]",
+                "action": "Added",
+                "amount": 19616,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:01]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:58]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:25]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -243,6 +387,12 @@
                 "timestamp": "[2025-04-17 09:20:30]",
                 "action": "Added",
                 "amount": 1029,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:13]",
+                "action": "Added",
+                "amount": 6532,
                 "description": "rep"
             }
         ]
@@ -338,6 +488,24 @@
                 "action": "Added",
                 "amount": 11008,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:13:47]",
+                "action": "Added",
+                "amount": 7431,
+                "description": "rep"
             }
         ]
     },
@@ -372,6 +540,12 @@
                 "timestamp": "[2025-04-17 09:17:33]",
                 "action": "Added",
                 "amount": 11790,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:18:00]",
+                "action": "Added",
+                "amount": 1576,
                 "description": "rep"
             }
         ]
@@ -485,6 +659,72 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:18:47]",
+                "action": "Added",
+                "amount": 46166,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:28:22]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:25]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -574,6 +814,36 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:22]",
+                "action": "Added",
+                "amount": 30841,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:01]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -621,6 +891,42 @@
                 "action": "Added",
                 "amount": 5411,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:28]",
+                "action": "Added",
+                "amount": 6086,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:17]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -662,6 +968,42 @@
                 "action": "Added",
                 "amount": 10555,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:02:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:13:25]",
+                "action": "Added",
+                "amount": 10833,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -714,6 +1056,24 @@
                 "timestamp": "[2025-04-17 09:22:35]",
                 "action": "Added",
                 "amount": 4234,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:18:08]",
+                "action": "Added",
+                "amount": 1331,
                 "description": "rep"
             }
         ]
@@ -828,6 +1188,36 @@
                 "action": "Removed",
                 "amount": 10100,
                 "description": "auc winner"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:31]",
+                "action": "Added",
+                "amount": 27319,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 17:37:21]",
+                "action": "Remove",
+                "amount": 100,
+                "description": "winner of auction ID 62"
+            },
+            {
+                "timestamp": "[2025-04-28 17:38:51]",
+                "action": "Remove",
+                "amount": 100,
+                "description": "winner of auction ID 65"
             }
         ]
     },
@@ -863,6 +1253,30 @@
                 "action": "Added",
                 "amount": 8483,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:02:41]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:12]",
+                "action": "Added",
+                "amount": 6920,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -934,6 +1348,66 @@
                 "action": "Added",
                 "amount": 10481,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:20:05]",
+                "action": "Added",
+                "amount": 16010,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:25]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:17]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -987,6 +1461,72 @@
                 "action": "Added",
                 "amount": 13919,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:37]",
+                "action": "Added",
+                "amount": 5543,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:28:22]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 17:34:28]",
+                "action": "Remove",
+                "amount": 1000,
+                "description": "winner of auction ID 55"
+            },
+            {
+                "timestamp": "[2025-04-28 17:35:12]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 57"
+            },
+            {
+                "timestamp": "[2025-04-28 17:35:25]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 58"
+            },
+            {
+                "timestamp": "[2025-04-28 17:35:34]",
+                "action": "Remove",
+                "amount": 1000,
+                "description": "winner of auction ID 59"
+            },
+            {
+                "timestamp": "[2025-04-28 17:37:48]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 63"
+            },
+            {
+                "timestamp": "[2025-04-28 17:39:36]",
+                "action": "Remove",
+                "amount": 80000,
+                "description": "winner of auction ID 67"
             }
         ]
     },
@@ -1034,6 +1574,12 @@
                 "action": "Added",
                 "amount": 4224,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:17:23]",
+                "action": "Added",
+                "amount": 2318,
+                "description": "rep"
             }
         ]
     },
@@ -1075,6 +1621,48 @@
                 "action": "Added",
                 "amount": 19300,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:11]",
+                "action": "Added",
+                "amount": 36986,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:26]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
             }
         ]
     },
@@ -1110,6 +1698,18 @@
                 "action": "Added",
                 "amount": 836,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:37]",
+                "action": "Added",
+                "amount": 4300,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1193,6 +1793,54 @@
                 "action": "Removed",
                 "amount": 102076,
                 "description": "777 + 99999 + 200 + 1100 aucs winner"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:13:55]",
+                "action": "Added",
+                "amount": 7330,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -1240,6 +1888,12 @@
                 "action": "Removed",
                 "amount": 120000,
                 "description": "auc winner"
+            },
+            {
+                "timestamp": "[2025-04-24 14:16:44]",
+                "action": "Added",
+                "amount": 3336,
+                "description": "rep"
             }
         ]
     },
@@ -1305,6 +1959,36 @@
                 "action": "Removed",
                 "amount": 5000,
                 "description": "auc winner"
+            },
+            {
+                "timestamp": "[2025-04-24 14:20:14]",
+                "action": "Added",
+                "amount": 14740,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-28 17:33:34]",
+                "action": "Remove",
+                "amount": 126000,
+                "description": "winner of auction ID 54"
+            },
+            {
+                "timestamp": "[2025-04-28 17:34:52]",
+                "action": "Remove",
+                "amount": 1400,
+                "description": "winner of auction ID 56"
+            },
+            {
+                "timestamp": "[2025-04-28 17:36:34]",
+                "action": "Remove",
+                "amount": 2100,
+                "description": "winner of auction ID 60"
+            },
+            {
+                "timestamp": "[2025-04-28 17:36:57]",
+                "action": "Remove",
+                "amount": 1700,
+                "description": "winner of auction ID 61"
             }
         ]
     },
@@ -1345,6 +2029,12 @@
                 "timestamp": "[2025-04-17 09:16:39]",
                 "action": "Added",
                 "amount": 6994,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:13:34]",
+                "action": "Added",
+                "amount": 7623,
                 "description": "rep"
             }
         ]
@@ -1387,6 +2077,30 @@
                 "action": "Added",
                 "amount": 2999,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-23 06:02:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-24 14:17:34]",
+                "action": "Added",
+                "amount": 1845,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
             }
         ]
     },
@@ -1428,6 +2142,18 @@
                 "action": "Added",
                 "amount": 7278,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:27]",
+                "action": "Added",
+                "amount": 4547,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1481,6 +2207,36 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:02:41]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:16:17]",
+                "action": "Added",
+                "amount": 3706,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
             }
         ]
     },
@@ -1546,6 +2302,60 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:02:41]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:57]",
+                "action": "Added",
+                "amount": 16194,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:43:29]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1593,6 +2403,18 @@
                 "action": "Added",
                 "amount": 7794,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:20:24]",
+                "action": "Added",
+                "amount": 14578,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:01]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
             }
         ]
     },
@@ -1657,6 +2479,18 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "boonstone participation"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:45]",
+                "action": "Added",
+                "amount": 4142,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -1710,6 +2544,54 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:17]",
+                "action": "Added",
+                "amount": 4696,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -1769,6 +2651,78 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-23 06:01:41]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:19:49]",
+                "action": "Added",
+                "amount": 16725,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:27:26]",
+                "action": "Added",
+                "amount": 500,
+                "description": "contract"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:25]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 17:39:17]",
+                "action": "Remove",
+                "amount": 43000,
+                "description": "winner of auction ID 66"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
             }
         ]
     },
@@ -1798,6 +2752,12 @@
                 "action": "Added",
                 "amount": 5079,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:16:03]",
+                "action": "Added",
+                "amount": 4026,
+                "description": "rep"
             }
         ]
     },
@@ -1814,6 +2774,12 @@
                 "timestamp": "[2025-04-10 10:13:35]",
                 "action": "Added",
                 "amount": 1599,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:18:19]",
+                "action": "Added",
+                "amount": 1233,
                 "description": "rep"
             }
         ]
@@ -1874,6 +2840,12 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "boonstone participation"
+            },
+            {
+                "timestamp": "[2025-04-24 14:18:30]",
+                "action": "Added",
+                "amount": 696,
+                "description": "rep"
             }
         ]
     },
@@ -1903,6 +2875,24 @@
                 "action": "Added",
                 "amount": 5556,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:53]",
+                "action": "Added",
+                "amount": 5413,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
             }
         ]
     },
@@ -1959,6 +2949,12 @@
                 "timestamp": "[2025-04-17 09:20:00]",
                 "action": "Added",
                 "amount": 2075,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:17:51]",
+                "action": "Added",
+                "amount": 1597,
                 "description": "rep"
             }
         ]
@@ -2058,6 +3054,18 @@
                 "action": "Added",
                 "amount": 10654,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:20:29]",
+                "action": "Added",
+                "amount": 11816,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     },
@@ -2086,6 +3094,12 @@
                 "action": "Added",
                 "amount": 1383,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-24 14:16:57]",
+                "action": "Added",
+                "amount": 3064,
+                "description": "rep"
             }
         ]
     },
@@ -2103,6 +3117,12 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "bonus for discord during boonstone"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:05]",
+                "action": "Added",
+                "amount": 4746,
+                "description": "rep"
             }
         ]
     },
@@ -2114,6 +3134,226 @@
                 "action": "Added",
                 "amount": 1000,
                 "description": "boonstone participation"
+            },
+            {
+                "timestamp": "[2025-04-24 14:14:45]",
+                "action": "Added",
+                "amount": 5542,
+                "description": "rep"
+            }
+        ]
+    },
+    "410528512370409472": {
+        "display_name": "Shaltear",
+        "logs": [
+            {
+                "timestamp": "[2025-04-23 06:01:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:15:54]",
+                "action": "Added",
+                "amount": 4080,
+                "description": "rep"
+            },
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-26 06:24:51]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "Boonstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:17]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            }
+        ]
+    },
+    "318390584777900053": {
+        "display_name": "GiganticRaven",
+        "logs": [
+            {
+                "timestamp": "[2025-04-23 06:02:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:20:45]",
+                "action": "Added",
+                "amount": 544,
+                "description": "rep"
+            }
+        ]
+    },
+    "778924235233296414": {
+        "display_name": "hasanulusoy_69",
+        "logs": [
+            {
+                "timestamp": "[2025-04-23 06:02:42]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "RIftstone battle"
+            },
+            {
+                "timestamp": "[2025-04-23 06:05:12]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "Riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-24 14:21:09]",
+                "action": "Added",
+                "amount": 101,
+                "description": "rep"
+            }
+        ]
+    },
+    "401016472362549254": {
+        "display_name": "SnoopSpell",
+        "logs": [
+            {
+                "timestamp": "[2025-04-24 14:17:12]",
+                "action": "Added",
+                "amount": 2545,
+                "description": "rep"
+            }
+        ]
+    },
+    "368418461774250016": {
+        "display_name": "Daxoz",
+        "logs": [
+            {
+                "timestamp": "[2025-04-26 06:23:26]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
+            }
+        ]
+    },
+    "338773490008195083": {
+        "display_name": "[ inf ] MetroGSD",
+        "logs": [
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            }
+        ]
+    },
+    "1354813915917451274": {
+        "display_name": "Chamoura",
+        "logs": [
+            {
+                "timestamp": "[2025-04-26 19:33:21]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone"
+            },
+            {
+                "timestamp": "[2025-04-26 19:34:16]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "riftstone discord bonus"
+            },
+            {
+                "timestamp": "[2025-04-27 17:31:26]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-04-28 19:53:31]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone"
+            },
+            {
+                "timestamp": "[2025-04-28 19:54:47]",
+                "action": "Added",
+                "amount": 2500,
+                "description": "boonstone discord bonus"
+            }
+        ]
+    },
+    "422162777151373322": {
+        "display_name": "Toxic91",
+        "logs": [
+            {
+                "timestamp": "[2025-04-27 17:30:50]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
             }
         ]
     }
