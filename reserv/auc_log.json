@@ -1,5 +1,5 @@
 {
-    "last_id": 67,
+    "last_id": 80,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -973,6 +973,188 @@
                 {
                     "user_id": 236670020787240963,
                     "amount": 80000
+                }
+            ]
+        },
+        "Daigon_68": {
+            "id": 68,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Magic evasion",
+            "created_at": "[2025-05-04 17:26:49]",
+            "date_of_end": "[2025-05-05 17:26:49]",
+            "top_3_bids": [
+                {
+                    "user_id": 330481661190078464,
+                    "amount": 500
+                }
+            ]
+        },
+        "Daigon_69": {
+            "id": 69,
+            "name": "Daigon",
+            "item": "Immortal legionare Helm",
+            "description": "Cooldown speed",
+            "created_at": "[2025-05-04 17:26:53]",
+            "date_of_end": "[2025-05-05 17:26:53]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Daigon_70": {
+            "id": 70,
+            "name": "Daigon",
+            "item": "Immortal legionare Helm",
+            "description": "Cooldown speed",
+            "created_at": "[2025-05-04 17:26:56]",
+            "date_of_end": "[2025-05-05 17:26:56]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Daigon_71": {
+            "id": 71,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Magic evasion",
+            "created_at": "[2025-05-04 17:27:24]",
+            "date_of_end": "[2025-05-05 17:27:24]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Daigon_72": {
+            "id": 72,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Cooldown speed",
+            "created_at": "[2025-05-04 17:27:34]",
+            "date_of_end": "[2025-05-05 17:27:34]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Naru_73": {
+            "id": 73,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "Max Health",
+            "created_at": "[2025-05-04 17:28:30]",
+            "date_of_end": "[2025-05-05 17:28:30]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 4500
+                }
+            ]
+        },
+        "Naru_74": {
+            "id": 74,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Melee Evasion",
+            "created_at": "[2025-05-04 17:29:10]",
+            "date_of_end": "[2025-05-05 17:29:10]",
+            "top_3_bids": [
+                {
+                    "user_id": 330481661190078464,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Naru_75": {
+            "id": 75,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Melee Endurance",
+            "created_at": "[2025-05-04 17:29:21]",
+            "date_of_end": "[2025-05-05 17:29:21]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 5100
+                }
+            ]
+        },
+        "Naru_76": {
+            "id": 76,
+            "name": "Naru",
+            "item": "NARU SPEAR",
+            "description": "Hit chance",
+            "created_at": "[2025-05-04 17:29:48]",
+            "date_of_end": "[2025-05-05 17:29:48]",
+            "top_3_bids": [
+                {
+                    "user_id": 205976132778983425,
+                    "amount": 85000
+                }
+            ]
+        },
+        "Naru_77": {
+            "id": 77,
+            "name": "Naru",
+            "item": "Runed Band of the Black Anvil",
+            "description": "Health Regen",
+            "created_at": "[2025-05-04 17:30:08]",
+            "date_of_end": "[2025-05-05 17:30:08]",
+            "top_3_bids": [
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 107000
+                }
+            ]
+        },
+        "Naru_78": {
+            "id": 78,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "Debuff duration",
+            "created_at": "[2025-05-04 17:30:32]",
+            "date_of_end": "[2025-05-05 17:30:32]",
+            "top_3_bids": [
+                {
+                    "user_id": 285516973234847746,
+                    "amount": 1000
+                }
+            ]
+        },
+        "Naru_79": {
+            "id": 79,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "Rsnged evasion",
+            "created_at": "[2025-05-04 17:30:40]",
+            "date_of_end": "[2025-05-05 17:30:40]",
+            "top_3_bids": [
+                {
+                    "user_id": 1233687696359034899,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Naru_80": {
+            "id": 80,
+            "name": "Naru",
+            "item": "Royal Praetors Plate Armor",
+            "description": "Melee Evasion",
+            "created_at": "[2025-05-04 17:31:04]",
+            "date_of_end": "[2025-05-05 17:31:04]",
+            "top_3_bids": [
+                {
+                    "user_id": 1354813915917451274,
+                    "amount": 5000
                 }
             ]
         }
