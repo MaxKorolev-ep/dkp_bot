@@ -1,5 +1,5 @@
 {
-    "last_id": 80,
+    "last_id": 92,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -1155,6 +1155,174 @@
                 {
                     "user_id": 1354813915917451274,
                     "amount": 5000
+                }
+            ]
+        },
+        "Naru_81": {
+            "id": 81,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "Collision chance",
+            "created_at": "[2025-05-11 17:28:00]",
+            "date_of_end": "[2025-05-12 17:28:00]",
+            "top_3_bids": [
+                {
+                    "user_id": 285516973234847746,
+                    "amount": 5000
+                }
+            ]
+        },
+        "Naru_82": {
+            "id": 82,
+            "name": "Naru",
+            "item": "Royal Praetors Plate Armor",
+            "description": "Max Health",
+            "created_at": "[2025-05-11 17:28:18]",
+            "date_of_end": "[2025-05-12 17:28:18]",
+            "top_3_bids": [
+                {
+                    "user_id": 338644317226926082,
+                    "amount": 1700
+                }
+            ]
+        },
+        "Naru_83": {
+            "id": 83,
+            "name": "Naru",
+            "item": "Spectral Overseer Tunic",
+            "description": "Ranged Evasion",
+            "created_at": "[2025-05-11 17:29:46]",
+            "date_of_end": "[2025-05-12 17:29:46]",
+            "top_3_bids": [
+                {
+                    "user_id": 338644317226926082,
+                    "amount": 14200
+                }
+            ]
+        },
+        "Naru_84": {
+            "id": 84,
+            "name": "Naru",
+            "item": "Symbol of Natures Advance",
+            "description": "Collision chance",
+            "created_at": "[2025-05-11 17:30:00]",
+            "date_of_end": "[2025-05-12 17:30:00]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 2222
+                }
+            ]
+        },
+        "Naru_85": {
+            "id": 85,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Magic Endurance",
+            "created_at": "[2025-05-11 17:30:29]",
+            "date_of_end": "[2025-05-12 17:30:29]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 666
+                }
+            ]
+        },
+        "Daigon_86": {
+            "id": 86,
+            "name": "Daigon",
+            "item": "Daigons Stormblade",
+            "description": "Buff Duration",
+            "created_at": "[2025-05-11 17:31:35]",
+            "date_of_end": "[2025-05-12 17:31:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 9999
+                }
+            ]
+        },
+        "Daigon_87": {
+            "id": 87,
+            "name": "Daigon",
+            "item": "Daigons Stormblade",
+            "description": "Heavy Attack Chance",
+            "created_at": "[2025-05-11 17:31:46]",
+            "date_of_end": "[2025-05-12 17:31:46]",
+            "top_3_bids": [
+                {
+                    "user_id": 268827145940238346,
+                    "amount": 5000
+                }
+            ]
+        },
+        "Daigon_88": {
+            "id": 88,
+            "name": "Daigon",
+            "item": "Spectra; Overseet Trouthers",
+            "description": "Magic Endurance",
+            "created_at": "[2025-05-11 17:34:02]",
+            "date_of_end": "[2025-05-12 17:34:02]",
+            "top_3_bids": [
+                {
+                    "user_id": 216609984794853378,
+                    "amount": 80000
+                }
+            ]
+        },
+        "Daigon_89": {
+            "id": 89,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Max Health",
+            "created_at": "[2025-05-11 17:34:17]",
+            "date_of_end": "[2025-05-12 17:34:17]",
+            "top_3_bids": [
+                {
+                    "user_id": 410528512370409472,
+                    "amount": 4000
+                }
+            ]
+        },
+        "Naru_90": {
+            "id": 90,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Debuff duration",
+            "created_at": "[2025-05-11 17:34:33]",
+            "date_of_end": "[2025-05-12 17:34:33]",
+            "top_3_bids": [
+                {
+                    "user_id": 212616548593041408,
+                    "amount": 1111
+                }
+            ]
+        },
+        "Naru_91": {
+            "id": 91,
+            "name": "Naru",
+            "item": "NARU GREATSWORD",
+            "description": "Collision chance",
+            "created_at": "[2025-05-11 17:34:51]",
+            "date_of_end": "[2025-05-12 17:34:51]",
+            "top_3_bids": [
+                {
+                    "user_id": 315855745478557696,
+                    "amount": 80000
+                }
+            ]
+        },
+        "Daigon_92": {
+            "id": 92,
+            "name": "Daigon",
+            "item": "Deep Draconic Gorget ",
+            "description": "Max Mana",
+            "created_at": "[2025-05-11 18:18:29]",
+            "date_of_end": "[2025-05-12 17:55:09]",
+            "top_3_bids": [
+                {
+                    "user_id": 422162777151373322,
+                    "amount": 50000
                 }
             ]
         }
