@@ -249,8 +249,8 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
         last_bid_time = last_bid_times[auction_id][user.id]
         time_since_last_bid = current_time - last_bid_time
 
-        if time_since_last_bid < 10:  # 1800 секунд = 30 минут
-            remaining_time = 10 - time_since_last_bid
+        if time_since_last_bid < 30:  # 1800 секунд = 30 минут
+            remaining_time = 30 - time_since_last_bid
             minutes = int(remaining_time // 60)
             seconds = int(remaining_time % 60)
             await interaction.response.send_message(

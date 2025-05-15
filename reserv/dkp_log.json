@@ -247,6 +247,48 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:26:30]",
+                "action": "Added",
+                "amount": 6518,
+                "description": "rep"
             }
         ]
     },
@@ -515,6 +557,48 @@
                 "action": "Added",
                 "amount": 17034,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:32:17]",
+                "action": "Added",
+                "amount": 16572,
+                "description": "rep"
             }
         ]
     },
@@ -728,6 +812,42 @@
                 "action": "Added",
                 "amount": 10052,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:25:24]",
+                "action": "Added",
+                "amount": 7945,
+                "description": "rep"
             }
         ]
     },
@@ -805,6 +925,42 @@
                 "action": "Added",
                 "amount": 8025,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:29:18]",
+                "action": "Added",
+                "amount": 10905,
+                "description": "rep"
             }
         ]
     },
@@ -1073,6 +1229,48 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:27:16]",
+                "action": "Added",
+                "amount": 5818,
+                "description": "rep"
             }
         ]
     },
@@ -1222,6 +1420,24 @@
                 "action": "Added",
                 "amount": 41952,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:30:23]",
+                "action": "Added",
+                "amount": 41574,
+                "description": "rep"
             }
         ]
     },
@@ -1365,6 +1581,24 @@
                 "action": "Added",
                 "amount": 10555,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:26:58]",
+                "action": "Added",
+                "amount": 5994,
+                "description": "rep"
             }
         ]
     },
@@ -1484,6 +1718,30 @@
                 "action": "Added",
                 "amount": 6316,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:29:31]",
+                "action": "Added",
+                "amount": 10576,
+                "description": "rep"
             }
         ]
     },
@@ -1734,6 +1992,18 @@
                 "action": "Added",
                 "amount": 9337,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:30:33]",
+                "action": "Added",
+                "amount": 37691,
+                "description": "rep"
             }
         ]
     },
@@ -2014,6 +2284,18 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:31:25]",
+                "action": "Added",
+                "amount": 25200,
+                "description": "rep"
             }
         ]
     },
@@ -2198,6 +2480,12 @@
                 "action": "Added",
                 "amount": 400,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-12 17:34:05]",
+                "action": "Remove",
+                "amount": 80000,
+                "description": "winner of auction ID 88"
             }
         ]
     },
@@ -2329,6 +2617,36 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:28:05]",
+                "action": "Remove",
+                "amount": 5000,
+                "description": "winner of auction ID 81"
+            },
+            {
+                "timestamp": "[2025-05-15 09:30:55]",
+                "action": "Added",
+                "amount": 27524,
+                "description": "rep"
             }
         ]
     },
@@ -2400,6 +2718,30 @@
                 "action": "Added",
                 "amount": 6243,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-12 17:28:20]",
+                "action": "Remove",
+                "amount": 1700,
+                "description": "winner of auction ID 82"
+            },
+            {
+                "timestamp": "[2025-05-12 17:35:20]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-12 17:39:05]",
+                "action": "Remove",
+                "amount": 14200,
+                "description": "winner of auction ID 83"
+            },
+            {
+                "timestamp": "[2025-05-12 18:09:37]",
+                "action": "Added",
+                "amount": 14500,
+                "description": "i am an idiot and missed the overseer tunic with trousers so sorry brutrak(((("
             }
         ]
     },
@@ -2597,6 +2939,48 @@
                 "action": "Added",
                 "amount": 4803,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:30:30]",
+                "action": "Remove",
+                "amount": 666,
+                "description": "winner of auction ID 85"
+            },
+            {
+                "timestamp": "[2025-05-12 17:32:35]",
+                "action": "Remove",
+                "amount": 2222,
+                "description": "winner of auction ID 84"
+            },
+            {
+                "timestamp": "[2025-05-12 17:33:50]",
+                "action": "Remove",
+                "amount": 9999,
+                "description": "winner of auction ID 86"
+            },
+            {
+                "timestamp": "[2025-05-12 17:34:35]",
+                "action": "Remove",
+                "amount": 1111,
+                "description": "winner of auction ID 90"
+            },
+            {
+                "timestamp": "[2025-05-15 09:29:55]",
+                "action": "Added",
+                "amount": 9273,
+                "description": "rep"
             }
         ]
     },
@@ -2668,6 +3052,12 @@
                 "action": "Added",
                 "amount": 2154,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:23:27]",
+                "action": "Added",
+                "amount": 4461,
+                "description": "rep"
             }
         ]
     },
@@ -2811,6 +3201,12 @@
                 "action": "Added",
                 "amount": 7252,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:25:44]",
+                "action": "Added",
+                "amount": 7252,
+                "description": "rep"
             }
         ]
     },
@@ -2876,6 +3272,18 @@
                 "action": "Added",
                 "amount": 4781,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:24:20]",
+                "action": "Added",
+                "amount": 3371,
+                "description": "rep"
             }
         ]
     },
@@ -3024,6 +3432,36 @@
                 "action": "Added",
                 "amount": 10653,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:26:39]",
+                "action": "Added",
+                "amount": 6279,
+                "description": "rep"
             }
         ]
     },
@@ -3310,6 +3748,48 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:31:06]",
+                "action": "Added",
+                "amount": 25492,
+                "description": "rep"
             }
         ]
     },
@@ -3381,6 +3861,18 @@
                 "action": "Added",
                 "amount": 9563,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:28:02]",
+                "action": "Added",
+                "amount": 14483,
+                "description": "rep"
             }
         ]
     },
@@ -3481,6 +3973,18 @@
                 "action": "Added",
                 "amount": 3852,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:28:37]",
+                "action": "Added",
+                "amount": 11386,
+                "description": "rep"
             }
         ]
     },
@@ -3630,6 +4134,54 @@
                 "action": "Added",
                 "amount": 6156,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:40:41]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:34:55]",
+                "action": "Remove",
+                "amount": 80000,
+                "description": "winner of auction ID 91"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:28:21]",
+                "action": "Added",
+                "amount": 11882,
+                "description": "rep"
             }
         ]
     },
@@ -3839,6 +4391,42 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:31:16]",
+                "action": "Added",
+                "amount": 25277,
+                "description": "rep"
             }
         ]
     },
@@ -3892,6 +4480,12 @@
                 "action": "Added",
                 "amount": 3318,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:30:06]",
+                "action": "Added",
+                "amount": 8473,
+                "description": "rep"
             }
         ]
     },
@@ -4016,6 +4610,12 @@
                 "action": "Added",
                 "amount": 2138,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:33:04]",
+                "action": "Added",
+                "amount": 2238,
+                "description": "rep"
             }
         ]
     },
@@ -4099,6 +4699,12 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-15 09:31:58]",
+                "action": "Added",
+                "amount": 20107,
+                "description": "rep"
             }
         ]
     },
@@ -4308,6 +4914,18 @@
                 "action": "Added",
                 "amount": 13842,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:29:46]",
+                "action": "Added",
+                "amount": 9894,
+                "description": "rep"
             }
         ]
     },
@@ -4360,6 +4978,12 @@
                 "action": "Added",
                 "amount": 1524,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:34:32]",
+                "action": "Added",
+                "amount": 1332,
+                "description": "rep"
             }
         ]
     },
@@ -4395,6 +5019,12 @@
                 "action": "Added",
                 "amount": 3892,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:24:40]",
+                "action": "Added",
+                "amount": 3325,
+                "description": "rep"
             }
         ]
     },
@@ -4430,6 +5060,12 @@
                 "action": "Added",
                 "amount": 4851,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:23:19]",
+                "action": "Added",
+                "amount": 4934,
+                "description": "rep"
             }
         ]
     },
@@ -4543,6 +5179,42 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:34:20]",
+                "action": "Remove",
+                "amount": 4000,
+                "description": "winner of auction ID 89"
+            },
+            {
+                "timestamp": "[2025-05-13 08:19:13]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:32:28]",
+                "action": "Added",
+                "amount": 15391,
+                "description": "rep"
             }
         ]
     },
@@ -4619,6 +5291,12 @@
                 "action": "Added",
                 "amount": 2000,
                 "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:24:56]",
+                "action": "Added",
+                "amount": 3322,
+                "description": "rep"
             }
         ]
     },
@@ -4648,6 +5326,12 @@
                 "action": "Added",
                 "amount": 2299,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:32:54]",
+                "action": "Added",
+                "amount": 2299,
+                "description": "rep"
             }
         ]
     },
@@ -4701,6 +5385,30 @@
                 "action": "Added",
                 "amount": 9315,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:27:27]",
+                "action": "Added",
+                "amount": 5696,
+                "description": "rep"
             }
         ]
     },
@@ -4742,6 +5450,24 @@
                 "action": "Added",
                 "amount": 7839,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:24:27]",
+                "action": "Added",
+                "amount": 3340,
+                "description": "rep"
             }
         ]
     },
@@ -4843,6 +5569,42 @@
                 "action": "Added",
                 "amount": 10084,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:31:41]",
+                "action": "Added",
+                "amount": 23871,
+                "description": "rep"
             }
         ]
     },
@@ -4878,6 +5640,24 @@
                 "action": "Added",
                 "amount": 500,
                 "description": "top 3 in guild contract"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:55:11]",
+                "action": "Remove",
+                "amount": 50000,
+                "description": "winner of auction ID 92"
+            },
+            {
+                "timestamp": "[2025-05-15 09:30:44]",
+                "action": "Added",
+                "amount": 27643,
+                "description": "rep"
             }
         ]
     },
@@ -4931,6 +5711,24 @@
                 "action": "Added",
                 "amount": 3756,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-15 09:27:08]",
+                "action": "Added",
+                "amount": 5952,
+                "description": "rep"
             }
         ]
     },
@@ -4972,6 +5770,42 @@
                 "action": "Added",
                 "amount": 14542,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-12 17:31:50]",
+                "action": "Remove",
+                "amount": 5000,
+                "description": "winner of auction ID 87"
+            },
+            {
+                "timestamp": "[2025-05-13 08:18:42]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:29:06]",
+                "action": "Added",
+                "amount": 11213,
+                "description": "rep"
             }
         ]
     },
@@ -5012,6 +5846,18 @@
                 "action": "Added",
                 "amount": 8321,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-15 09:23:52]",
+                "action": "Added",
+                "amount": 4002,
+                "description": "rep"
             }
         ]
     },
@@ -5059,6 +5905,30 @@
                 "action": "Added",
                 "amount": 7775,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:51]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-13 08:19:13]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:28:12]",
+                "action": "Added",
+                "amount": 12153,
+                "description": "rep"
             }
         ]
     },
@@ -5088,6 +5958,12 @@
                 "action": "Added",
                 "amount": 3203,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:32:45]",
+                "action": "Added",
+                "amount": 2571,
+                "description": "rep"
             }
         ]
     },
@@ -5111,6 +5987,18 @@
                 "action": "Added",
                 "amount": 5225,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:27:53]",
+                "action": "Added",
+                "amount": 14866,
+                "description": "rep"
             }
         ]
     },
@@ -5128,6 +6016,42 @@
                 "action": "Added",
                 "amount": 1816,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:03:14]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-10 06:04:10]",
+                "action": "Added",
+                "amount": 1000,
+                "description": "inter server event"
+            },
+            {
+                "timestamp": "[2025-05-11 17:41:13]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss"
+            },
+            {
+                "timestamp": "[2025-05-15 09:20:53]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame"
+            },
+            {
+                "timestamp": "[2025-05-15 09:27:39]",
+                "action": "Added",
+                "amount": 5347,
+                "description": "rep"
             }
         ]
     },
@@ -5145,6 +6069,29 @@
                 "action": "Added",
                 "amount": 5072,
                 "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-15 09:25:02]",
+                "action": "Added",
+                "amount": 3122,
+                "description": "rep"
+            }
+        ]
+    },
+    "625019872849690627": {
+        "display_name": "Tendora/ Niki",
+        "logs": [
+            {
+                "timestamp": "[2025-05-09 13:39:30]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "wargame + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-09 13:40:58]",
+                "action": "Removed",
+                "amount": 2000,
+                "description": "missed with Tensai"
             }
         ]
     }
