@@ -1,5 +1,5 @@
 {
-    "last_id": 92,
+    "last_id": 112,
     "auctions": {
         "Daigon_1": {
             "id": 1,
@@ -1323,6 +1323,266 @@
                 {
                     "user_id": 422162777151373322,
                     "amount": 50000
+                }
+            ]
+        },
+        "Naru_93": {
+            "id": 93,
+            "name": "Naru",
+            "item": "NARU SPEAR",
+            "description": "Heavy attack chance",
+            "created_at": "[2025-05-18 22:13:03]",
+            "date_of_end": "[2025-05-19 20:26:23]",
+            "top_3_bids": []
+        },
+        "Naru_94": {
+            "id": 94,
+            "name": "Naru",
+            "item": "NARU SPEAR",
+            "description": "Heavy attack chance",
+            "created_at": "[2025-05-18 19:14:29]",
+            "date_of_end": "[2025-05-19 17:27:49]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 10000
+                }
+            ]
+        },
+        "Naru_95": {
+            "id": 95,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Magic evasion",
+            "created_at": "[2025-05-18 19:14:51]",
+            "date_of_end": "[2025-05-19 17:28:11]",
+            "top_3_bids": [
+                {
+                    "user_id": 410528512370409472,
+                    "amount": 8000
+                }
+            ]
+        },
+        "Naru_96": {
+            "id": 96,
+            "name": "Naru",
+            "item": "Chosen Vanquishers Trousers",
+            "description": "Magic evasion",
+            "created_at": "[2025-05-18 19:14:54]",
+            "date_of_end": "[2025-05-19 17:28:14]",
+            "top_3_bids": [
+                {
+                    "user_id": 257578294369583105,
+                    "amount": 2100
+                }
+            ]
+        },
+        "Naru_97": {
+            "id": 97,
+            "name": "Naru",
+            "item": "Runed Band of the Black Anvil",
+            "description": "Collision chance",
+            "created_at": "[2025-05-18 19:15:15]",
+            "date_of_end": "[2025-05-19 17:28:35]",
+            "top_3_bids": [
+                {
+                    "user_id": 736012769052196884,
+                    "amount": 120100
+                }
+            ]
+        },
+        "Naru_98": {
+            "id": 98,
+            "name": "Naru",
+            "item": "Effortless Victory Greaves",
+            "description": "Debuff duration",
+            "created_at": "[2025-05-18 19:15:33]",
+            "date_of_end": "[2025-05-19 17:28:53]",
+            "top_3_bids": [
+                {
+                    "user_id": 285516973234847746,
+                    "amount": 2000
+                }
+            ]
+        },
+        "Daigon_99": {
+            "id": 99,
+            "name": "Daigon",
+            "item": "Chosen Vanquishers Visage",
+            "description": "Melee evasion",
+            "created_at": "[2025-05-18 19:16:20]",
+            "date_of_end": "[2025-05-19 17:29:40]",
+            "top_3_bids": [
+                {
+                    "user_id": 257578294369583105,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Daigon_100": {
+            "id": 100,
+            "name": "Daigon",
+            "item": "Deep Draconic Gorget",
+            "description": "Mana regen",
+            "created_at": "[2025-05-18 19:17:02]",
+            "date_of_end": "[2025-05-19 17:30:22]",
+            "top_3_bids": [
+                {
+                    "user_id": 315855745478557696,
+                    "amount": 45000
+                }
+            ]
+        },
+        "Daigon_101": {
+            "id": 101,
+            "name": "Daigon",
+            "item": "Deep Draconic Gorget",
+            "description": "Max mana",
+            "created_at": "[2025-05-18 19:17:10]",
+            "date_of_end": "[2025-05-19 17:30:30]",
+            "top_3_bids": [
+                {
+                    "user_id": 410528512370409472,
+                    "amount": 45000
+                }
+            ]
+        },
+        "Daigon_102": {
+            "id": 102,
+            "name": "Daigon",
+            "item": "Deep Fathom Grasp",
+            "description": "Melee evasion",
+            "created_at": "[2025-05-18 19:17:40]",
+            "date_of_end": "[2025-05-19 17:31:00]",
+            "top_3_bids": [
+                {
+                    "user_id": 410528512370409472,
+                    "amount": 10000
+                }
+            ]
+        },
+        "Bellandir_103": {
+            "id": 103,
+            "name": "Bellandir",
+            "item": "Deep Fathom Kicks",
+            "description": "Melee evasion",
+            "created_at": "[2025-05-18 19:18:44]",
+            "date_of_end": "[2025-05-19 17:32:04]",
+            "top_3_bids": []
+        },
+        "Bellandir_104": {
+            "id": 104,
+            "name": "Bellandir",
+            "item": "Primal Ritual Collar",
+            "description": "Max Health",
+            "created_at": "[2025-05-18 19:19:04]",
+            "date_of_end": "[2025-05-19 17:32:24]",
+            "top_3_bids": [
+                {
+                    "user_id": 257578294369583105,
+                    "amount": 22600
+                }
+            ]
+        },
+        "Bellandir_105": {
+            "id": 105,
+            "name": "Bellandir",
+            "item": "Ring of Divine Instruction",
+            "description": "Buff duration",
+            "created_at": "[2025-05-18 19:21:44]",
+            "date_of_end": "[2025-05-19 17:35:04]",
+            "top_3_bids": [
+                {
+                    "user_id": 1311707950322286605,
+                    "amount": 108000
+                }
+            ]
+        },
+        "Bellandir_106": {
+            "id": 106,
+            "name": "Bellandir",
+            "item": "Transcendent Tempest Boots",
+            "description": "Maagic Evasion",
+            "created_at": "[2025-05-18 19:22:11]",
+            "date_of_end": "[2025-05-19 17:35:31]",
+            "top_3_bids": []
+        },
+        "Bellandir_107": {
+            "id": 107,
+            "name": "Bellandir",
+            "item": "Sacred Repose Circle",
+            "description": "Max Health",
+            "created_at": "[2025-05-18 19:22:36]",
+            "date_of_end": "[2025-05-19 17:35:56]",
+            "top_3_bids": [
+                {
+                    "user_id": 1354813915917451274,
+                    "amount": 2500
+                }
+            ]
+        },
+        "Bellandir_108": {
+            "id": 108,
+            "name": "Bellandir",
+            "item": "Band of Ancestors Blood",
+            "description": "Petrification chance",
+            "created_at": "[2025-05-18 19:23:00]",
+            "date_of_end": "[2025-05-19 17:36:20]",
+            "top_3_bids": []
+        },
+        "Bellandir_109": {
+            "id": 109,
+            "name": "Bellandir",
+            "item": "Bracelet of Fractured Worlds",
+            "description": "Max Mana",
+            "created_at": "[2025-05-18 19:23:18]",
+            "date_of_end": "[2025-05-19 17:36:38]",
+            "top_3_bids": [
+                {
+                    "user_id": 257578294369583105,
+                    "amount": 23000
+                }
+            ]
+        },
+        "Bellandir_110": {
+            "id": 110,
+            "name": "Bellandir",
+            "item": "Ardent Herald Gown",
+            "description": "Max Health",
+            "created_at": "[2025-05-18 19:23:42]",
+            "date_of_end": "[2025-05-19 17:37:02]",
+            "top_3_bids": [
+                {
+                    "user_id": 1354813915917451274,
+                    "amount": 2500
+                }
+            ]
+        },
+        "Daigon_111": {
+            "id": 111,
+            "name": "Daigon",
+            "item": "Immortal legionare Helm",
+            "description": "Ranged Endurance",
+            "created_at": "[2025-05-18 19:24:08]",
+            "date_of_end": "[2025-05-19 17:37:28]",
+            "top_3_bids": [
+                {
+                    "user_id": 1354813915917451274,
+                    "amount": 1500
+                }
+            ]
+        },
+        "Daigon_112": {
+            "id": 112,
+            "name": "Daigon",
+            "item": "Daigons Stormblade",
+            "description": "Heavy Attack Chance",
+            "created_at": "[2025-05-18 19:24:27]",
+            "date_of_end": "[2025-05-19 17:37:47]",
+            "top_3_bids": [
+                {
+                    "user_id": 316168392275001358,
+                    "amount": 10000
                 }
             ]
         }
