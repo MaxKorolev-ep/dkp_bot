@@ -301,6 +301,18 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:22:43]",
+                "action": "Added",
+                "amount": 1755,
+                "description": "guild reputation"
             }
         ]
     },
@@ -623,6 +635,72 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:27:50]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 94"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:50]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 112"
+            },
+            {
+                "timestamp": "[2025-05-22 09:28:04]",
+                "action": "Added",
+                "amount": 14003,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:03:23]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22 discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -878,6 +956,42 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:06]",
+                "action": "Added",
+                "amount": 9389,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:03:23]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22 discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -997,6 +1111,24 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:17]",
+                "action": "Added",
+                "amount": 7773,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -1319,6 +1451,24 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:27:02]",
+                "action": "Added",
+                "amount": 18625,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
             }
         ]
     },
@@ -1486,6 +1636,42 @@
                 "action": "Added",
                 "amount": 41574,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:25:12]",
+                "action": "Added",
+                "amount": 36729,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -1647,6 +1833,42 @@
                 "action": "Added",
                 "amount": 5994,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:25]",
+                "action": "Added",
+                "amount": 6904,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:03:23]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22 discord bonus"
             }
         ]
     },
@@ -1790,6 +2012,18 @@
                 "action": "Added",
                 "amount": 10576,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:27:22]",
+                "action": "Added",
+                "amount": 17180,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
             }
         ]
     },
@@ -2052,6 +2286,12 @@
                 "action": "Added",
                 "amount": 37691,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:22:33]",
+                "action": "Added",
+                "amount": 1860,
+                "description": "guild reputation"
             }
         ]
     },
@@ -2122,6 +2362,12 @@
                 "timestamp": "[2025-05-08 09:08:34]",
                 "action": "Added",
                 "amount": 6626,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:22:23]",
+                "action": "Added",
+                "amount": 2496,
                 "description": "guild reputation"
             }
         ]
@@ -2344,6 +2590,30 @@
                 "action": "Added",
                 "amount": 25200,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-19 17:35:05]",
+                "action": "Remove",
+                "amount": 108000,
+                "description": "winner of auction ID 105"
+            },
+            {
+                "timestamp": "[2025-05-22 09:27:10]",
+                "action": "Added",
+                "amount": 18211,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
             }
         ]
     },
@@ -2695,6 +2965,36 @@
                 "action": "Added",
                 "amount": 27524,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:55]",
+                "action": "Remove",
+                "amount": 2000,
+                "description": "winner of auction ID 98"
+            },
+            {
+                "timestamp": "[2025-05-22 09:25:34]",
+                "action": "Added",
+                "amount": 24306,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -3029,6 +3329,18 @@
                 "action": "Added",
                 "amount": 9273,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:49]",
+                "action": "Added",
+                "amount": 5673,
+                "description": "guild reputation"
             }
         ]
     },
@@ -3106,6 +3418,12 @@
                 "action": "Added",
                 "amount": 4461,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:21:33]",
+                "action": "Added",
+                "amount": 3845,
+                "description": "guild reputation"
             }
         ]
     },
@@ -3332,6 +3650,12 @@
                 "action": "Added",
                 "amount": 3371,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:22:50]",
+                "action": "Added",
+                "amount": 1751,
+                "description": "guild reputation"
             }
         ]
     },
@@ -3516,6 +3840,24 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-22 09:17:32]",
+                "action": "Added",
+                "amount": 11925,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
             }
         ]
     },
@@ -3628,6 +3970,12 @@
                 "timestamp": "[2025-05-08 09:07:14]",
                 "action": "Added",
                 "amount": 8389,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:21:24]",
+                "action": "Added",
+                "amount": 4171,
                 "description": "guild reputation"
             }
         ]
@@ -3844,6 +4192,42 @@
                 "action": "Added",
                 "amount": 25492,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:27:34]",
+                "action": "Added",
+                "amount": 16926,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
             }
         ]
     },
@@ -3927,6 +4311,30 @@
                 "action": "Added",
                 "amount": 14483,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:18:47]",
+                "action": "Added",
+                "amount": 9762,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
             }
         ]
     },
@@ -4039,6 +4447,12 @@
                 "action": "Added",
                 "amount": 11386,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:17:42]",
+                "action": "Added",
+                "amount": 11067,
+                "description": "guild reputation"
             }
         ]
     },
@@ -4242,6 +4656,36 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:30:25]",
+                "action": "Remove",
+                "amount": 45000,
+                "description": "winner of auction ID 100"
+            },
+            {
+                "timestamp": "[2025-05-22 09:17:16]",
+                "action": "Added",
+                "amount": 13385,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -4493,6 +4937,60 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:25:42]",
+                "action": "Added",
+                "amount": 19280,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -4552,6 +5050,12 @@
                 "action": "Added",
                 "amount": 8473,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:23:03]",
+                "action": "Added",
+                "amount": 1337,
+                "description": "guild reputation"
             }
         ]
     },
@@ -4682,6 +5186,12 @@
                 "action": "Added",
                 "amount": 2238,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:23:12]",
+                "action": "Added",
+                "amount": 1310,
+                "description": "guild reputation"
             }
         ]
     },
@@ -4771,6 +5281,18 @@
                 "action": "Added",
                 "amount": 20107,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:35]",
+                "action": "Remove",
+                "amount": 120100,
+                "description": "winner of auction ID 97"
+            },
+            {
+                "timestamp": "[2025-05-22 09:26:01]",
+                "action": "Added",
+                "amount": 19269,
+                "description": "guild reputation"
             }
         ]
     },
@@ -4851,6 +5373,12 @@
                 "timestamp": "[2025-05-08 09:14:57]",
                 "action": "Added",
                 "amount": 950,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:24:32]",
+                "action": "Added",
+                "amount": 1115,
                 "description": "guild reputation"
             }
         ]
@@ -4992,6 +5520,90 @@
                 "action": "Added",
                 "amount": 9894,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:16]",
+                "action": "Remove",
+                "amount": 2100,
+                "description": "winner of auction ID 96"
+            },
+            {
+                "timestamp": "[2025-05-19 17:29:45]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 99"
+            },
+            {
+                "timestamp": "[2025-05-19 17:32:25]",
+                "action": "Remove",
+                "amount": 22600,
+                "description": "winner of auction ID 104"
+            },
+            {
+                "timestamp": "[2025-05-19 17:36:40]",
+                "action": "Remove",
+                "amount": 23000,
+                "description": "winner of auction ID 109"
+            },
+            {
+                "timestamp": "[2025-05-22 09:27:56]",
+                "action": "Added",
+                "amount": 15346,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:03:23]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22 discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -5050,6 +5662,12 @@
                 "action": "Added",
                 "amount": 1332,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:24:44]",
+                "action": "Added",
+                "amount": 554,
+                "description": "guild reputation"
             }
         ]
     },
@@ -5103,6 +5721,12 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-22 09:20:10]",
+                "action": "Added",
+                "amount": 5285,
+                "description": "guild reputation"
             }
         ]
     },
@@ -5150,6 +5774,18 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:59]",
+                "action": "Added",
+                "amount": 5338,
+                "description": "guild reputation"
             }
         ]
     },
@@ -5299,6 +5935,72 @@
                 "action": "Added",
                 "amount": 15391,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:50]",
+                "action": "Remove",
+                "amount": 8000,
+                "description": "winner of auction ID 95"
+            },
+            {
+                "timestamp": "[2025-05-19 17:30:30]",
+                "action": "Remove",
+                "amount": 45000,
+                "description": "winner of auction ID 101"
+            },
+            {
+                "timestamp": "[2025-05-19 17:31:05]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 102"
+            },
+            {
+                "timestamp": "[2025-05-22 09:17:52]",
+                "action": "Added",
+                "amount": 11053,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -5493,6 +6195,36 @@
                 "action": "Added",
                 "amount": 5696,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:24:18]",
+                "action": "Added",
+                "amount": 1201,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -5558,6 +6290,24 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:18:35]",
+                "action": "Added",
+                "amount": 10589,
+                "description": "guild reputation"
             }
         ]
     },
@@ -5701,6 +6451,84 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:36:00]",
+                "action": "Remove",
+                "amount": 2500,
+                "description": "winner of auction ID 107"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:05]",
+                "action": "Remove",
+                "amount": 2500,
+                "description": "winner of auction ID 110"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:30]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 111"
+            },
+            {
+                "timestamp": "[2025-05-22 09:25:24]",
+                "action": "Added",
+                "amount": 33814,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
+            },
+            {
+                "timestamp": "[2025-05-24 16:28:25]",
+                "action": "Added",
+                "amount": 500,
+                "description": "discord bonus participation"
             }
         ]
     },
@@ -5754,6 +6582,12 @@
                 "action": "Added",
                 "amount": 27643,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:24:25]",
+                "action": "Added",
+                "amount": 1200,
+                "description": "guild reputation"
             }
         ]
     },
@@ -5914,6 +6748,36 @@
                 "action": "Added",
                 "amount": 5000,
                 "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:18:57]",
+                "action": "Added",
+                "amount": 9420,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -5966,6 +6830,12 @@
                 "action": "Added",
                 "amount": 4002,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:19:41]",
+                "action": "Added",
+                "amount": 6605,
+                "description": "guild reputation"
             }
         ]
     },
@@ -6037,6 +6907,12 @@
                 "action": "Added",
                 "amount": 12153,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:21:15]",
+                "action": "Added",
+                "amount": 4403,
+                "description": "guild reputation"
             }
         ]
     },
@@ -6072,6 +6948,12 @@
                 "action": "Added",
                 "amount": 2571,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:21:47]",
+                "action": "Added",
+                "amount": 3492,
+                "description": "guild reputation"
             }
         ]
     },
@@ -6107,6 +6989,30 @@
                 "action": "Added",
                 "amount": 14866,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:28:10]",
+                "action": "Added",
+                "amount": 13664,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     },
@@ -6160,6 +7066,18 @@
                 "action": "Added",
                 "amount": 5347,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-22 09:20:38]",
+                "action": "Added",
+                "amount": 4645,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 16:27:59]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild dark destroyers"
             }
         ]
     },
@@ -6200,6 +7118,173 @@
                 "action": "Removed",
                 "amount": 2000,
                 "description": "missed with Tensai"
+            }
+        ]
+    },
+    "1334324206267138159": {
+        "display_name": "Monic3rd",
+        "logs": [
+            {
+                "timestamp": "[2025-05-18 19:20:25]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            }
+        ]
+    },
+    "312285168939433985": {
+        "display_name": "Betifero",
+        "logs": [
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:22:01]",
+                "action": "Added",
+                "amount": 3164,
+                "description": "guild reputation"
+            }
+        ]
+    },
+    "1277517320201437264": {
+        "display_name": "War3dB",
+        "logs": [
+            {
+                "timestamp": "[2025-05-20 06:20:46]",
+                "action": "Added",
+                "amount": 5004,
+                "description": "rep 05.14"
+            },
+            {
+                "timestamp": "[2025-05-22 09:21:01]",
+                "action": "Added",
+                "amount": 4538,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            }
+        ]
+    },
+    "288645835963629569": {
+        "display_name": "......Noitra",
+        "logs": [
+            {
+                "timestamp": "[2025-05-22 09:22:12]",
+                "action": "Added",
+                "amount": 2709,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-22 09:31:12]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #1"
+            },
+            {
+                "timestamp": "[2025-05-22 09:34:36]",
+                "action": "Added",
+                "amount": 2000,
+                "description": "Wargame #2"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:03:23]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22 discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            }
+        ]
+    },
+    "1218585304060137522": {
+        "display_name": "Grizzy",
+        "logs": [
+            {
+                "timestamp": "[2025-05-22 09:24:02]",
+                "action": "Added",
+                "amount": 1262,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            }
+        ]
+    },
+    "997121936196915271": {
+        "display_name": "CombatKitKat",
+        "logs": [
+            {
+                "timestamp": "[2025-05-22 09:24:10]",
+                "action": "Added",
+                "amount": 1262,
+                "description": "guild reputation"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:02:50]",
+                "action": "Added",
+                "amount": 500,
+                "description": "guild event Requiem of Light 05/22"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
+            }
+        ]
+    },
+    "528866376216215573": {
+        "display_name": "Zeppow",
+        "logs": [
+            {
+                "timestamp": "[2025-05-23 19:38:17]",
+                "action": "Added",
+                "amount": 6721,
+                "description": "6721 (1721 rep + 5000 siege event)"
+            },
+            {
+                "timestamp": "[2025-05-24 14:08:21]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "Boonstone raid"
             }
         ]
     }

@@ -289,6 +289,24 @@
                 "action": "Added",
                 "amount": 6518,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -599,6 +617,36 @@
                 "action": "Added",
                 "amount": 16572,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:27:50]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 94"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:50]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 112"
             }
         ]
     },
@@ -848,6 +896,12 @@
                 "action": "Added",
                 "amount": 7945,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
             }
         ]
     },
@@ -961,6 +1015,12 @@
                 "action": "Added",
                 "amount": 10905,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
             }
         ]
     },
@@ -1271,6 +1331,24 @@
                 "action": "Added",
                 "amount": 5818,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -1438,6 +1516,12 @@
                 "action": "Added",
                 "amount": 41574,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -1599,6 +1683,18 @@
                 "action": "Added",
                 "amount": 5994,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -2296,6 +2392,12 @@
                 "action": "Added",
                 "amount": 25200,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-19 17:35:05]",
+                "action": "Remove",
+                "amount": 108000,
+                "description": "winner of auction ID 105"
             }
         ]
     },
@@ -2647,6 +2749,24 @@
                 "action": "Added",
                 "amount": 27524,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:55]",
+                "action": "Remove",
+                "amount": 2000,
+                "description": "winner of auction ID 98"
             }
         ]
     },
@@ -2981,6 +3101,12 @@
                 "action": "Added",
                 "amount": 9273,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -3462,6 +3588,12 @@
                 "action": "Added",
                 "amount": 6279,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
             }
         ]
     },
@@ -3790,6 +3922,18 @@
                 "action": "Added",
                 "amount": 25492,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -4182,6 +4326,24 @@
                 "action": "Added",
                 "amount": 11882,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:30:25]",
+                "action": "Remove",
+                "amount": 45000,
+                "description": "winner of auction ID 100"
             }
         ]
     },
@@ -4427,6 +4589,24 @@
                 "action": "Added",
                 "amount": 25277,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -4705,6 +4885,12 @@
                 "action": "Added",
                 "amount": 20107,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:35]",
+                "action": "Remove",
+                "amount": 120100,
+                "description": "winner of auction ID 97"
             }
         ]
     },
@@ -4926,6 +5112,42 @@
                 "action": "Added",
                 "amount": 9894,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:16]",
+                "action": "Remove",
+                "amount": 2100,
+                "description": "winner of auction ID 96"
+            },
+            {
+                "timestamp": "[2025-05-19 17:29:45]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 99"
+            },
+            {
+                "timestamp": "[2025-05-19 17:32:25]",
+                "action": "Remove",
+                "amount": 22600,
+                "description": "winner of auction ID 104"
+            },
+            {
+                "timestamp": "[2025-05-19 17:36:40]",
+                "action": "Remove",
+                "amount": 23000,
+                "description": "winner of auction ID 109"
             }
         ]
     },
@@ -5025,6 +5247,18 @@
                 "action": "Added",
                 "amount": 3325,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
             }
         ]
     },
@@ -5066,6 +5300,18 @@
                 "action": "Added",
                 "amount": 4934,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
             }
         ]
     },
@@ -5215,6 +5461,36 @@
                 "action": "Added",
                 "amount": 15391,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:56]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:28:50]",
+                "action": "Remove",
+                "amount": 8000,
+                "description": "winner of auction ID 95"
+            },
+            {
+                "timestamp": "[2025-05-19 17:30:30]",
+                "action": "Remove",
+                "amount": 45000,
+                "description": "winner of auction ID 101"
+            },
+            {
+                "timestamp": "[2025-05-19 17:31:05]",
+                "action": "Remove",
+                "amount": 10000,
+                "description": "winner of auction ID 102"
             }
         ]
     },
@@ -5468,6 +5744,24 @@
                 "action": "Added",
                 "amount": 3340,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -5605,6 +5899,42 @@
                 "action": "Added",
                 "amount": 23871,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 19:25:51]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-19 17:36:00]",
+                "action": "Remove",
+                "amount": 2500,
+                "description": "winner of auction ID 107"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:05]",
+                "action": "Remove",
+                "amount": 2500,
+                "description": "winner of auction ID 110"
+            },
+            {
+                "timestamp": "[2025-05-19 17:37:30]",
+                "action": "Remove",
+                "amount": 1500,
+                "description": "winner of auction ID 111"
             }
         ]
     },
@@ -5806,6 +6136,24 @@
                 "action": "Added",
                 "amount": 11213,
                 "description": "rep"
+            },
+            {
+                "timestamp": "[2025-05-18 22:07:50]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "boonstone + discord bonus"
+            },
+            {
+                "timestamp": "[2025-05-18 22:10:56]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            },
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
             }
         ]
     },
@@ -6092,6 +6440,45 @@
                 "action": "Removed",
                 "amount": 2000,
                 "description": "missed with Tensai"
+            }
+        ]
+    },
+    "1334324206267138159": {
+        "display_name": "Monic3rd",
+        "logs": [
+            {
+                "timestamp": "[2025-05-18 19:20:25]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            },
+            {
+                "timestamp": "[2025-05-18 19:26:18]",
+                "action": "Added",
+                "amount": 5000,
+                "description": "castle siege"
+            }
+        ]
+    },
+    "312285168939433985": {
+        "display_name": "Betifero",
+        "logs": [
+            {
+                "timestamp": "[2025-05-18 19:27:08]",
+                "action": "Added",
+                "amount": 10000,
+                "description": "boss participation"
+            }
+        ]
+    },
+    "1277517320201437264": {
+        "display_name": "War3dB",
+        "logs": [
+            {
+                "timestamp": "[2025-05-20 06:20:46]",
+                "action": "Added",
+                "amount": 5004,
+                "description": "rep 05.14"
             }
         ]
     }

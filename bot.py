@@ -223,22 +223,23 @@ async def bids(interaction: discord.Interaction, auction_id: str):
 @app_commands.autocomplete(auction_id=auction_autocomplete)
 async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
     """Размещает ставку на аукцион с указанным ID. Если ставка перебита, предыдущему лидеру возвращается DKP."""
+    await interaction.response.defer(ephemeral=True)  # <= это предотвращает timeout
     user = interaction.user
     auction_id = int(auction_id)
     current_time = time.time()
 
     channel = discord.utils.get(interaction.guild.text_channels, name="💰bidschannel💰")
     if not channel:
-        await interaction.response.send_message("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
+        await interaction.followup.send("Error: Channel '💰bidschannel💰' not found.", ephemeral=True)
         return
 
     auction = auctions.get(auction_id)
     if not auction:
-        await interaction.response.send_message(f"Auction with ID '{auction_id}' does not exist.", ephemeral=True)
+        await interaction.followup.send(f"Auction with ID '{auction_id}' does not exist.", ephemeral=True)
         return
 
     if current_time > auction["end_time"]:
-        await interaction.response.send_message(f"The auction for **{auction['item']}** has ended!", ephemeral=True)
+        await interaction.followup.send(f"The auction for **{auction['item']}** has ended!", ephemeral=True)
         return
 
     highest_bid = auction.get("highest_bid", 0)
@@ -253,14 +254,14 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
             remaining_time = 30 - time_since_last_bid
             minutes = int(remaining_time // 60)
             seconds = int(remaining_time % 60)
-            await interaction.response.send_message(
+            await interaction.followup.send(
                 f"⏳ {user.mention}, you can bid again in {minutes}m {seconds}s.",
                 ephemeral=True
             )
             return
             
     if amount <= highest_bid + 99:
-        await interaction.response.send_message(
+        await interaction.followup.send(
             f"❌ Your bid must be **higher on 100** than the current highest bid (**{highest_bid} DKP**).",
             ephemeral=True
         )
@@ -278,7 +279,7 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
     # Проверяем, может ли пользователь сделать ставку
     available_dkp = user_dkp - locked_dkp  # Свободные DKP
     if amount > available_dkp:
-        await interaction.response.send_message(
+        await interaction.followup.send(
             f"❌ You only have **{available_dkp} DKP** available to bid. You cannot place this bid.",
             ephemeral=True
         )
@@ -316,7 +317,7 @@ async def bid(interaction: discord.Interaction, auction_id: str, amount: int):
     )
 
     await channel.send(embed=embed)
-    await interaction.response.send_message(f"✅ Your bid of {amount} DKP for **{auction['item']}** has been placed.", ephemeral=True)
+    await interaction.followup.send(f"✅ Your bid of {amount} DKP for **{auction['item']}** has been placed.", ephemeral=True)
 
 # Функция для удаления ставки на конкретный аукцион
 @bot.tree.command(name="dbid", description="Admin removes a specific user's bid from an auction.")
@@ -694,37 +695,46 @@ async def fendauc(ctx, auction_id: int):
 # Функция для просмотра всех активных аукционов
 @bot.tree.command(name="aucs", description="Shows all list of active auctions")
 async def aucs(interaction: discord.Interaction):
-    """Shows all active auctions, including the current highest bid and bidder."""
+    """Shows all active auctions, split into chunks of 10 per message."""
     global auctions
 
     if not auctions:
         await interaction.response.send_message("There are no active auctions at the moment.", ephemeral=True)
         return
 
-    active_auctions_message = "**🎯 Active Auctions:**\n"
-    for auction_id, auction in auctions.items():
-        remaining_time = auction["end_time"] - time.time()
-        highest_bid = auction.get("highest_bid", 0)
-        highest_bidder_id = auction.get("highest_bidder")
+    auction_list = list(auctions.items())
+    chunk_size = 10
+    chunks = [auction_list[i:i + chunk_size] for i in range(0, len(auction_list), chunk_size)]
 
-        # Получаем имя пользователя, если есть
-        if highest_bidder_id:
-            try:
-                highest_bidder = await bot.fetch_user(highest_bidder_id)
-                member = interaction.guild.get_member(highest_bidder_id)
-                bidder_name = member.display_name if member else "Unknown"
-            except:
-                bidder_name = "Unknown"
-            bid_info = f" | 💰 Highest Bid: **{highest_bid} DKP** by **{bidder_name}**"
-        else:
-            bid_info = " | 💰 No bids yet"
+    # Отвечаем первым сообщением, остальные отправим followup'ами
+    await interaction.response.send_message("📋 Listing active auctions...", ephemeral=True)
 
-        active_auctions_message += (
-            f"**ID: {auction_id}** - {auction['item']} "
-            f"(⏳ Time left: {format_seconds(remaining_time)}){bid_info}\n"
-        )
+    for idx, chunk in enumerate(chunks, start=1):
+        message = f"**🎯 Active Auctions (Page {idx}/{len(chunks)}):**\n"
+        for auction_id, auction in chunk:
+            remaining_time = auction["end_time"] - time.time()
+            highest_bid = auction.get("highest_bid", 0)
+            highest_bidder_id = auction.get("highest_bidder")
 
-    await interaction.response.send_message(active_auctions_message, ephemeral=True)
+            if highest_bidder_id:
+                try:
+                    highest_bidder = await bot.fetch_user(highest_bidder_id)
+                    member = interaction.guild.get_member(highest_bidder_id)
+                    bidder_name = member.display_name if member else "Unknown"
+                except:
+                    bidder_name = "Unknown"
+                bid_info = f" | 💰 Highest Bid: **{highest_bid} DKP** by **{bidder_name}**"
+            else:
+                bid_info = " | 💰 No bids yet"
+
+            message += (
+                f"**ID: {auction_id}** - {auction['item']} "
+                f"(⏳ Time left: {format_seconds(remaining_time)}){bid_info}\n"
+            )
+
+        # Отправляем страницу
+        await interaction.followup.send(message, ephemeral=True)
+
 
 
 async def log_dkp_change(user, amount, action, description=""):
